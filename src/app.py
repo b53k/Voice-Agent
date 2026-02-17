@@ -15,6 +15,7 @@ from fastapi.responses import Response
 
 from twilio.twiml.voice_response import VoiceResponse, Connect
 from conversation import ConversationHandler
+from conversation_logger import ConversationLogger
 
 env_path = Path(__file__).parent / '.env'
 load_dotenv()
@@ -22,7 +23,23 @@ load_dotenv()
 logging.basicConfig(level = logging.INFO)
 logger = logging.getLogger(__name__)
 
-scenario = 'scheduling'
+scenarios = [
+    'scheduling',
+    'refill',
+    'reschedule',
+    'cancel',
+    'complex_multi_request',
+    'urgent_edge_case',
+    'memory_stress_test',
+    'hallucination_detection',
+    'rapid_interruption_simulation',
+    'ambiguous_request',
+    'boundary_condition_test',
+    'information_overload'
+]
+
+scenario = scenarios[0]
+
 if scenario == 'cancel':
     language = "hi-IN"
     tts_language = "hi-IN"
@@ -78,6 +95,8 @@ async def websocket_endpoint(websocket: WebSocket):
 
     await websocket.accept()
 
+    # Initialize conversation logger
+    conversation_logger = ConversationLogger(scenario)
 
     try:
         while True:
@@ -89,11 +108,15 @@ async def websocket_endpoint(websocket: WebSocket):
                 operator_text = message.get("voicePrompt")
                 logger.info(f" <<< Operator said: {operator_text}")
 
-                #ai_reply = await conversation_handler.process_transcript(user_text)
-                #ai_reply = "What's up Bipin? I will count from 1 to 10. 1 2 3 4 5 6 7 8 9 10."
+                # log operator message
+                conversation_logger.log_operator(operator_text)
 
                 ai_reply = await conversation_handler.process_transcript(operator_text, stream = False)
                 logger.info(f" >>> AI replied: {ai_reply}")
+
+                if ai_reply:
+                    # log patient message
+                    conversation_logger.log_patient(ai_reply)
 
                 # Send AI reply back to be spoken
                 reply = {
@@ -107,9 +130,11 @@ async def websocket_endpoint(websocket: WebSocket):
 
     except WebSocketDisconnect:
         logger.info(f"WebSocket Disconnected")
+        conversation_logger.save()
 
     except Exception as e:
         logger.error(f"WebSocket error: {e}")
+        conversation_logger.save()  # Save the conversation log even on error.
         raise HTTPException(status_code = 500, detail = str(e))
 
 
