@@ -15,9 +15,12 @@ load_dotenv()
 
 account_sid = os.getenv('TWILIO_ACCOUNT_SID')
 auth_token = os.getenv('TWILIO_AUTH_TOKEN')
-client = Client(account_sid, auth_token)
 webhook_url = os.getenv('WEBHOOK_URL')
+twilio_number = os.getenv('TWILIO_NUMBER')
+test_number = os.getenv('TEST_NUMBER')
+my_number = os.getenv('MY_NUMBER')
 
+client = Client(account_sid, auth_token)
 
 def make_call(to_number, from_number, webhook_url):
     call = client.calls.create(
@@ -31,8 +34,4 @@ def make_call(to_number, from_number, webhook_url):
     return call.sid
 
 if __name__ == '__main__':
-    twilio_number = '+14043415604'
-    test_number = '+16156451400'
-    my_number = '+16623800332'
-    sabin_number = '+17047960263'
-    make_call(sabin_number, twilio_number, webhook_url)
+    make_call(test_number, twilio_number, webhook_url)
