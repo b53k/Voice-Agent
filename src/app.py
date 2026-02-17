@@ -99,6 +99,45 @@ async def websocket_endpoint(websocket: WebSocket):
     # Initialize conversation logger
     conversation_logger = ConversationLogger(scenario)
 
+    # Message buffering to wait for complete operator messages.
+    operator_message_buffer = []
+    buffer_timeout_task = None
+    SILENCE_TIMEOUT = 3.0  # seconds to wait for silence before flushing buffer.
+
+    async def process_buffered_messages():
+        """
+            Process buffered messages when we have a complete operator message.
+        """
+        nonlocal operator_message_buffer, buffer_timeout_task
+
+        if not operator_message_buffer:
+            return # No messages to process.
+
+        # Combine all buffered messages into one.
+        full_operator_message = " ".join(operator_message_buffer)
+        operator_message_buffer = []    # Clear buffer
+
+        logger.info(f" >>> Operator Said: {full_operator_message}")
+
+        conversation_logger.log_operator(full_operator_message)
+
+        ai_reply = await conversation_handler.process_transcript(full_operator_message, stream = False)
+        logger.info(f" >>> AI replied: {ai_reply}")
+
+        if ai_reply:
+            # log patient message
+            conversation_logger.log_patient(ai_reply)
+
+            # Send AI reply back to be spoken
+            reply = {
+                "type": "text",
+                "token": ai_reply,
+                "last": True,   # Indicates the last token in the sequence.
+                "interruptible": True, # Indicates if the reply can be interrupted by user input.
+            }
+        
+            await websocket.send_text(json.dumps(reply))
+
     try:
         while True:
             data = await websocket.receive_text()
@@ -107,36 +146,52 @@ async def websocket_endpoint(websocket: WebSocket):
             # Twilio sends "prompt" message when the user finishes a sentence.
             if message.get("type") == "prompt":
                 operator_text = message.get("voicePrompt")
-                logger.info(f" <<< Operator said: {operator_text}")
 
-                # log operator message
-                conversation_logger.log_operator(operator_text)
+                if operator_text and operator_text.strip():
+                    # Add to buffer
+                    operator_message_buffer.append(operator_text.strip())
 
-                # Check if the message seems incomplete (doesn't end with punctuation)
-                is_incomplete = operator_text and not operator_text.rstrip().endswith(('.', '!', '?', ':', ';'))
+                    # Cancel any existing timeout task.
+                    if buffer_timeout_task and not buffer_timeout_task.done():
+                        buffer_timeout_task.cancel()
 
-                # add small delay to ensure we're not responding too quickly.
-                if is_incomplete:
-                    await asyncio.sleep(4)  # wait 4 seconds before responding.
-                else:
-                    await asyncio.sleep(0.5)  # wait 500 ms seconds before responding.
+                    # Start a new timeout - wait for SILENCE_TIMEOUT seconds of no new messages.
+                    async def timeout_handler():
+                        await asyncio.sleep(SILENCE_TIMEOUT)
+                        await process_buffered_messages()
 
-                ai_reply = await conversation_handler.process_transcript(operator_text, stream = False)
-                logger.info(f" >>> AI replied: {ai_reply}")
+                    buffer_timeout_task = asyncio.create_task(timeout_handler())
 
-                if ai_reply:
-                    # log patient message
-                    conversation_logger.log_patient(ai_reply)
+                    
 
-                # Send AI reply back to be spoken
-                reply = {
-                    "type": "text",
-                    "token": ai_reply,
-                    "last": True,   # Indicates the last token in the sequence.
-                    "interruptible": True, # Indicates if the reply can be interrupted by user input.
-                }
+                # # log operator message
+                # conversation_logger.log_operator(operator_text)
 
-                await websocket.send_text(json.dumps(reply))
+                # # Check if the message seems incomplete (doesn't end with punctuation)
+                # is_incomplete = operator_text and not operator_text.rstrip().endswith(('.', '!', '?', ':', ';'))
+
+                # # add small delay to ensure we're not responding too quickly.
+                # if is_incomplete:
+                #     await asyncio.sleep(6)  # wait 6 seconds before responding.
+                # else:
+                #     await asyncio.sleep(3)  # wait 3 seconds before responding.
+
+                # ai_reply = await conversation_handler.process_transcript(operator_text, stream = False)
+                # logger.info(f" >>> AI replied: {ai_reply}")
+
+                # if ai_reply:
+                #     # log patient message
+                #     conversation_logger.log_patient(ai_reply)
+
+                # # Send AI reply back to be spoken
+                # reply = {
+                #     "type": "text",
+                #     "token": ai_reply,
+                #     "last": True,   # Indicates the last token in the sequence.
+                #     "interruptible": True, # Indicates if the reply can be interrupted by user input.
+                # }
+
+                # await websocket.send_text(json.dumps(reply))
 
     except WebSocketDisconnect:
         logger.info(f"WebSocket Disconnected")
