@@ -50,9 +50,11 @@ class ConversationLogger:
         run_numbers = []
         for file in existing_files:
             try:
-                parts = file.stem.split("_")
-                if len(parts) >= 3 and parts[1] == "run":
-                    run_numbers.append(int(parts[2]))
+                stem = file.stem
+
+                if "_run_" in stem:
+                    number_part = stem.split("_run_")[-1]
+                    run_numbers.append(int(number_part))
 
             except (ValueError, IndexError):
                 continue
