@@ -37,7 +37,7 @@ class ConversationHandler:
         self.set_scenario(scenario)
 
     def _load_prompts(self) -> dict:
-        prompt_path = Path(__file__).parent / 'prompts' / 'prompt_copy.json'
+        prompt_path = Path(__file__).parent / 'prompts' / 'prompt.json'
         with open(prompt_path, 'r') as f:
             prompts = json.load(f)
         return prompts

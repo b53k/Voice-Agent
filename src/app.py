@@ -22,7 +22,7 @@ load_dotenv()
 logging.basicConfig(level = logging.INFO)
 logger = logging.getLogger(__name__)
 
-scenario = 'howdy'
+scenario = 'scheduling'
 if scenario == 'cancel':
     language = "hi-IN"
     tts_language = "hi-IN"
