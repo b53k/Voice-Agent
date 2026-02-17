@@ -5,6 +5,7 @@ Initiates Media Streams connection for full-duplex communication.
 '''
 import os
 import json
+import asyncio
 from dotenv import load_dotenv
 from pathlib import Path
 import logging
@@ -110,6 +111,9 @@ async def websocket_endpoint(websocket: WebSocket):
 
                 # log operator message
                 conversation_logger.log_operator(operator_text)
+
+                # add small delay to ensure we're not responding too quickly.
+                await asyncio.sleep(0.1)
 
                 ai_reply = await conversation_handler.process_transcript(operator_text, stream = False)
                 logger.info(f" >>> AI replied: {ai_reply}")
