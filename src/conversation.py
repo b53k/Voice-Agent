@@ -57,8 +57,22 @@ class ConversationHandler:
         # Determine target language based on scenario
         target_language = "Hindi" if self.scenario == 'cancel' else "English"
         overview_text = overview_text.replace('[TARGET_LANGUAGE]', target_language)
-        
-        system_message = SystemMessage(content = f"{overview_text}\n\n{prompt_text}")
+
+        # Add behavior instructions
+        behavior_instructions = """**CONVERSATION BEHAVIOR:**
+        - WAIT for the operator to finish their COMPLETE thought before responding
+        - If the operator's message seems incomplete, DO NOT respond yet - wait for them to finish
+        - Natural conversation has pauses - don't rush to respond immediately
+
+        **NAME HANDLING - IMPORTANT:**
+        - Your name is Bipin Koirala, but if the operator mispronounces it (e.g., "Ethan", "Dipen", "B Pen", etc.), DO NOT correct them repeatedly
+        - Only correct your name ONCE if it's completely wrong, then move on
+        - If the operator uses a similar-sounding name, just accept it and continue with the conversation
+        - Do NOT keep nagging or correcting the operator about name pronunciation - it's annoying and not the point of this call
+        - Focus on your actual task (scheduling, refilling, etc.) rather than name corrections
+        - The operator understanding your name is not critical - getting your appointment/request handled is what matters"""
+
+        system_message = SystemMessage(content = f"{overview_text}\n\n{behavior_instructions}\n\n{prompt_text}")
         self.conversation_history = [system_message]
 
     async def process_transcript(
