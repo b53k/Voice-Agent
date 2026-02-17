@@ -19,6 +19,9 @@ load_dotenv()
 logging.basicConfig(level = logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Supress verbose logging from google_genai
+logging.getLogger('google_genai').setLevel(logging.WARNING)
+
 class ConversationHandler:
     """
         Handles conversation flow: Transcript -> LLM -> Response Text
