@@ -112,8 +112,14 @@ async def websocket_endpoint(websocket: WebSocket):
                 # log operator message
                 conversation_logger.log_operator(operator_text)
 
+                # Check if the message seems incomplete (doesn't end with punctuation)
+                is_incomplete = operator_text and not operator_text.rstrip().endswith(('.', '!', '?', ':', ';'))
+
                 # add small delay to ensure we're not responding too quickly.
-                await asyncio.sleep(0.1)
+                if is_incomplete:
+                    await asyncio.sleep(4)  # wait 4 seconds before responding.
+                else:
+                    await asyncio.sleep(0.5)  # wait 500 ms seconds before responding.
 
                 ai_reply = await conversation_handler.process_transcript(operator_text, stream = False)
                 logger.info(f" >>> AI replied: {ai_reply}")
