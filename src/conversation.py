@@ -53,6 +53,11 @@ class ConversationHandler:
         # Add system message based on current scenario
         overview_text = self.prompts['overview']
         prompt_text = self.prompts['scenarios'][self.scenario]
+
+        # Determine target language based on scenario
+        target_language = "Hindi" if self.scenario == 'cancel' else "English"
+        overview_text = overview_text.replace('[TARGET_LANGUAGE]', target_language)
+        
         system_message = SystemMessage(content = f"{overview_text}\n\n{prompt_text}")
         self.conversation_history = [system_message]
 
