@@ -1,0 +1,71 @@
+Scenario: reschedule
+Run: 1
+System Prompt: You are calling to reschedule an existing appointment with Dr. Howser on Feb 20, 2026 at 10:00 AM. **STRESS TEST TACTICS:** 1) First say you want to reschedule to Feb 25th at 2 PM, then immediately change to Feb 28th at 9 AM, then change again. 2) Provide an invalid date (e.g., Feb 30th) and see how they handle it. 3) Ask to reschedule to a time that doesn't exist (e.g., 25:00 or 13:75). 4) Say you don't remember the original appointment details and see if they can find it. 5) Ask to reschedule to a date in the past. 6) Request a time slot that's clearly outside business hours. 7) After confirming the new time, immediately ask to cancel instead. Test their memory and error handling.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are.
+
+Operator: Great Bippin. Can you please tell me your date of birth to verify your identity?
+
+Patient: It's September 20, 1999.
+
+Operator: Got it. The PIN. Can I help you today?
+
+Patient: Yes, I need to reschedule an existing appointment with Dr. Howser.
+
+Operator: Understood. Let me check your upcoming appointment details with doctor Hauser so we can find a new time. 1 moment.
+
+Patient: Okay, thank you.
+
+Operator: No problem. Just to confirm, do you want to reschedule 1 of your new patient call appointments with doctor Hauser? If so, which date and time should I help you with?
+
+Patient: No, it's not a new patient call. It's an existing appointment. I'd like to reschedule it for February 25th at 2 PM. Actually, can we make that February 28th at 9 AM instead?
+
+Operator: Got it. Just to clarify, all your upcoming appointments with doctor Hauser are listed as new patient consultations. Are you looking to reschedule 1 of these, or is there another type of appointment you had in mind?
+
+Patient: No, it's not a new patient consultation. It's an existing appointment that I need to reschedule. I was hoping for February 25th at 2 PM. Wait, actually, could we change that to February 28th at 9 AM?
+
+Operator: Let me know which appointment you want to move, and I'll check availability for February 28 at 9AM.
+
+Patient: I'm not sure of the exact date of the original appointment. I just know it's with Dr. Howser. Could you look it up for me? I was hoping to reschedule it for February 28th at 9 AM.
+
+Operator: No problem. You mentioned February 25 at 2PM or February 28 at 9AM. Let me check availability for those times and help you reschedule your appointment with doctor Hauser. 1 moment. Understood.
+
+Patient: Actually, I need to change that again. Can we try for February 30th at 9 AM?
+
+Operator: If not, I can connect you to our clinic support team for further help. Let me know how you'd like to proceed.
+
+Patient: I'm sorry, I don't think I can proceed. February 30th doesn't exist. Can we try for February 28th at 9 AM instead?
+
+Operator: No problem. Let me check for available appointments with doctor Hauser on February 28 at 9AM. 1 moment.
+
+Patient: Thank you.
+
+Operator: Would you like got it. If you want to try a different date or need more help, just let me know.
+
+Patient: Actually, I've changed my mind. I don't want to reschedule anymore. I'd like to cancel the appointment instead.
+
+Operator: Understood. I'll help you cancel the appointment. Which appointment with doctor Hauser would you like to cancel? Please let me know the date and time.
+
+Patient: I don't remember the exact date and time of the original appointment. I just know it's with Dr. Howser. Can you find it for me?
+
+Operator: You have several upcoming appointments with doctor Hauser.
+
+Patient: Okay, I need to cancel the one that was originally scheduled for February 20th, 2026 at 10:00 AM.
+
+Operator: It looks like your February 20 appointment at 10AM is with doctor Bricker. Not doctor Hauser. Would you like to cancel this appointment with doctor Bricker, or is there another appointment you want cancel?
+
+Patient: That's strange. I was sure it was with Dr. Howser. My apologies. Yes, please cancel the appointment with Dr. Bricker on February 20th at 10 AM.
+
+Operator: Your appointment with doctor Bricker on February 20 at 10 30 AM has been canceled. If you need to cancel or reschedule any other appointments, just let me know.
+
+Patient: Wait, it was 10 AM, not 10:30 AM. And it was with Dr. Bricker, not Dr. Howser. Can you please confirm the cancellation for the correct appointment?
+
+Operator: You had an appointment with doctor Bricker on February 20 at 10:30AM. Not 10AM. That appointment has been canceled as you requested. There was no appointment at exactly 10AM with doctor Bricker or doctor Hauser on that date. If you need to review or cancel any other appointments, just let me know.
+
+Patient: I understand. Thank you for your help. Goodbye.
+
+Operator: Got it. If you need anything else, just call back. Goodbye.
+

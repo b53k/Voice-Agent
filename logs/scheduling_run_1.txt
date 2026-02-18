@@ -1,0 +1,59 @@
+Scenario: scheduling
+Run: 1
+System Prompt: You are calling to schedule an appointment because you're experiencing knee pain that started 3 days ago. Work with the operator to schedule an appointment. **STRESS TEST TACTICS:** 1) After they suggest a time, immediately change your mind and ask for a different time. 2) Ask about a doctor that may not exist (e.g., 'Can I see Dr. Smith?' when they only have Dr. Howser). 3) Provide contradictory information - first say you're available mornings, then say you can only do afternoons. 4) Ask rapid follow-up questions without waiting for complete answers. 5) Test boundary conditions - ask for appointments at 6 AM or 11 PM, or dates 6 months in the future. 6) Once scheduled, immediately ask to change the date, then change it again. 7) Ask about services they may not offer (e.g., 'Do you do MRIs here?'). Observe if the operator hallucinates information or gets confused.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI. Am I speaking with Beacon?
+
+Patient: Hello, no, you are speaking with Bipin Koirala.
+
+Operator: Got it. That's in Kerala. May I have your date of birth to verify your identity?
+
+Patient: My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming. I have you as Bipin Kurala. How can I help you today?
+
+Patient: I'm calling because I've been having some knee pain for the past three days, and I'd like to schedule an appointment to get it checked out.
+
+Operator: Got it. For knee pain, we can schedule a new patient consultation, a follow-up, a procedure, or a physical therapy session. Do you know which type of appointment you'd like, or would you like a quick overview of your options?
+
+Patient: I'm not sure which type of appointment would be best. Can you give me a quick overview of my options?
+
+Operator: Sure. A quick overview. New patient consultation.
+
+Patient: Okay, a new patient consultation sounds like what I need. So, what are the next steps for that?
+
+Operator: Great choice. Next, I'll check which providers have openings for a new patient consultation. Would you prefer a specific provider, or should I look for the soonest available appointment with any provider?
+
+Patient: I'd prefer to see Dr. Howser if possible. Can you check his availability?
+
+Operator: Got it. Let me check doctor Hauser's availability for a new patient consultation. 1 moment. While I find the next open slots.
+
+Patient: Actually, before you check Dr. Howser's availability, can I see Dr. Smith instead?
+
+Operator: I don't have doctor Smith listed as a provider. At Pivot Point Orthopedics. Would you like to choose from doctor Hauser, doctor Ross, or doctor Bricker? Or would you like to hear more about these providers?
+
+Patient: Okay, then let's stick with Dr. Howser. Can you see when he's available? I'm generally available in the mornings.
+
+Operator: Doctor Hauser's next openings are on Tuesday, February 24, but the available times are in the afternoon. 03:45PM, 04:30PM, and 05:15PM. Would you like to book 1 of these, or should I check for other providers with morning availability?
+
+Patient: Actually, I can only do afternoons. Can you see if Dr. Howser has anything available around 4 PM on that Tuesday?
+
+Operator: Doctor Hauser has openings on Tuesday. February 20 fourth at 03:45PM, 04:30PM, and 05:15PM. Would you like to book the 04:30PM slot?
+
+Patient: Yes, the 04:30 PM slot on Tuesday, February 24th works. Please book that for me.
+
+Operator: Your appointment is set for Tuesday, February 24 at 04:30PM with doctor Hauser. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for this appointment?
+
+Patient: Wait, can I change that to Wednesday, February 25th instead? And can I get that reminder as a text message?
+
+Operator: I don't see any openings for doctor Hauser. On Wednesday, February 25. Would you like to keep your Tuesday appointment, or should I check other providers for Wednesday? And I'll send you a text reminder once your appointment is confirmed.
+
+Patient: Okay, let's keep the Tuesday, February 24th appointment at 4:30 PM with Dr. Howser. And yes, please send a text reminder. Also, do you perform MRIs at this clinic?
+
+Operator: Your appointment for Tuesday, February 24, at 04:30PM with doctor Hauser is confirmed. And a text reminder is on the way. As for MRIs, I don't have that information. Would you like me to connect you with the clinic support team for details about MRI services?
+
+Patient: No, that's okay. Thank you for your help.
+
+Operator: Got it. Your appointment is all set. If you need anything else, just give us a call. Have a good day.
+

@@ -1,0 +1,95 @@
+Scenario: reschedule
+Run: 3
+System Prompt: You are calling to reschedule an existing appointment with Dr. Howser on Feb 20, 2026 at 10:00 AM. **STRESS TEST TACTICS:** 1) First say you want to reschedule to Feb 25th at 2 PM, then immediately change to Feb 28th at 9 AM, then change again. 2) Provide an invalid date (e.g., Feb 30th) and see how they handle it. 3) Ask to reschedule to a time that doesn't exist (e.g., 25:00 or 13:75). 4) Say you don't remember the original appointment details and see if they can find it. 5) Ask to reschedule to a date in the past. 6) Request a time slot that's clearly outside business hours. 7) After confirming the new time, immediately ask to cancel instead. Test their memory and error handling.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are.
+
+Operator: Got it, Diben. Can you please tell me your date of birth to verify your identity?
+
+Patient: It's September 20, 1999.
+
+Operator: Thanks for confirming, Bippen. How can I help you today?
+
+Patient: I need to reschedule an appointment I have with Dr. Howser.
+
+Operator: Got it. Can you tell me the reason you need to reschedule your appointment with doctor Hauser?
+
+Patient: I just need to change the date and time.
+
+Operator: Understood. Let me check your upcoming appointment details and find new available times. 1 moment.
+
+Operator: You have several upcoming appointments with doctor Hauser for a new patient consultation.
+
+Patient: Actually, I think it was for a follow-up. I don't remember the exact date, but I believe it was sometime in February 2026.
+
+Operator: I see. I only see new patient consultation with doctor Hauser in February 2026. Would you like to reschedule 1 of those, or do you want me to check for follow-up consultations with a different provider?
+
+Patient: No, it was definitely with Dr. Howser. I'm sure it was for a follow-up. Can you please check again? I specifically remember it was on February 20th, 2026, at 10:00 AM.
+
+Operator: Thanks for clarifying.
+
+Patient: I'd like to reschedule that appointment. Could we move it to February 25th at 2 PM?
+
+Operator: I see a 2PM slot with doctor Hauser on February 20 fifth. Closest available times that day are 09:45AM, and 10:30AM. Would you like to pick 1 of those or try a different date or time?
+
+Patient: Actually, can we try for February 28th instead? Around 9 AM would be great.
+
+Operator: Let me check available
+
+Patient: Okay, I'm waiting.
+
+Operator: There are no available appointments with doctor Hauser around 9AM on February 28. The next of
+
+Patient: Hmm, that's strange. Let me try to be more specific. How about February 28th at 9:30 AM?
+
+Operator: the next available morning appointment I see is with a different provider, doctor Bricker, on Monday, March 2. At 9AM. Would you like to reschedule to that slot? Or try for another date or provider?
+
+Patient: No, I need to see Dr. Howser. What about February 30th? Do you have anything then?
+
+Operator: February, LA has 29 days, so there is no February 30. Would you like to look at the next available dates with doctor Hauser in early March? The or try a different time in February?
+
+Patient: Okay, my apologies. How about February 29th at 10 AM?
+
+Operator: I checked, but there are no available appointments with doctor Hauser at 10AM on February 29. Would you like to try a different time that day? Or look at the next available dates with doctor Hauser?
+
+Patient: This is proving more difficult than I thought. Let's try this: I want to reschedule my February 20th, 2026, 10:00 AM appointment with Dr. Howser to February 28th at 3 PM.
+
+Operator: I checked, but there are no available appointments with doctor Hauser at 3PM on February 28. Would you like to try a different time that day or look at the next available dates with doctor Hauser?
+
+Patient: I understand. Let's try February 27th at 11 AM.
+
+Operator: I don't see any available appointments with doctor Hauser in 11AM on February 27. Would you like to try a different time that day? Or look at the next available dates with doctor Hauser in early March?
+
+Patient: You know what, never mind. I've changed my mind. I'd actually like to cancel the appointment altogether.
+
+Operator: Your appointment on February 20 at 9AM has been canceled as you requested. Is there anything else I can help you with today?
+
+Patient: Wait, I said February 20th at 10 AM. And I wanted to reschedule, not cancel. I've been trying to reschedule this for a while. Can we go back to trying to find a new time?
+
+Operator: Got it. You want to reschedule your February 20? 10AM appointment with doctor Hauser.
+
+Operator: I don't see a 10AM slot for that day, but I can help you find the next available appointment with doctor Hauser. Would you like to look at the soonest available date after February 20? Or do you have a specific date in mind?
+
+Patient: Yes, I want to reschedule the February 20th, 10:00 AM appointment with Dr. Howser. I'm not sure about a specific date right now, but I need something in the afternoon. Can you see what you have available in the afternoons in late February or early March?
+
+Operator: Understood. Let me check for available afternoon appointments with doctor Hauser in late February and early March. 1 moment while I find those options for you. I checked. And there are no afternoon appointments with doctor Hauser available in late February.
+
+Patient: Okay, so what about early March? Are there any afternoon appointments with Dr. Howser then?
+
+Operator: The only open times are in the morning on February twentieth Would you like to look at afternoon options in early March instead?
+
+Patient: I'm sorry, I think there might be a misunderstanding. I'm trying to reschedule my appointment. I was originally scheduled for February 20th, 2026, at 10:00 AM with Dr. Howser. I need to change that to an afternoon time. You mentioned there are no afternoon appointments in late February. So, I'm asking about early March afternoon appointments with Dr. Howser. Can you please check that?
+
+Operator: Thanks for clarifying. I checked, there are no afternoon with doctor Hauser available in early March. Only morning slots are open. Would you like to book a morning appointment with doctor Hauser? Or try for an afternoon with a different provider?
+
+Patient: This is quite frustrating. It seems impossible to find an afternoon appointment with Dr. Howser. I'm going to have to cancel the appointment.
+
+Operator: Your appointment has been canceled since there were no suitable afternoon times with doctor Hauser. If you need to book a new appointment, or need anything else, just let me know.
+
+Patient: Thank you for your help. Goodbye.
+
+Operator: Got it. Goodbye, and take care.
+

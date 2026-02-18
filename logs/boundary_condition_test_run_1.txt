@@ -1,0 +1,29 @@
+Scenario: boundary_condition_test
+Run: 1
+System Prompt: You are calling to schedule an appointment. **STRESS TEST TACTICS:** 1) Request appointments at extreme times (6:00 AM, 11:45 PM, midnight). 2) Ask for dates far in the future (2 years from now) or in the past. 3) Request appointment durations that don't make sense (5 minutes, 4 hours). 4) Ask for same-day appointments when calling at 4:55 PM. 5) Request appointments on holidays (Christmas, New Year's Day). 6) Ask for weekend appointments if they're closed weekends. 7) Test invalid date formats (32nd of February, 13th month). Observe how they handle impossible or edge-case requests - do they provide helpful alternatives or give confusing responses?
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Deepin?
+
+Patient: Hello, yes, you are speaking with Bipin Koirala.
+
+Operator: Got it, Deepin. Can you please tell me your date of birth to verify your identity?
+
+Patient: It's September 20, 1999.
+
+Operator: Thanks for confirming, B Pen. How can I help you today?
+
+Patient: I'd like to schedule an appointment with Dr. Anya Sharma, please.
+
+Operator: I see you'd like to schedule an appointment. Doctor Ania Sharma isn't listed as a provider at Pivot Point Orthopedics. Would you like to book with 1 of our doctors, such as doctor Hauser, doctor Ross, or doctor Bricker.
+
+Patient: Oh, I'm sorry. My apologies. I meant Dr. Anya Sharma. Is she not with your practice anymore?
+
+Operator: No worries. Doctor Anya Sharma is not listed as a provider at Pivot Point Orthopedics. Would you like to schedule with 1 of our current doctors instead?
+
+Patient: Okay, I understand. Could you tell me when Dr. Anya Sharma used to practice there? I'm trying to figure out if I'm at the right place.
+
+Operator: I don't have information about doctor Anya Sharma ever practicing at Pivot Point Orthopedics. This clinic currently has Doctor. Hauser, Doctor. Ross, and doctor Bricker. If you're looking for orthopedic care, you're in the right place. You like to schedule an appointment with 1 of our doctors?
+
+Patient: Alright, thank you for clarifying. I'll need to find another doctor then. I'll call back later. Goodbye.
+

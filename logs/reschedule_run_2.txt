@@ -1,0 +1,23 @@
+Scenario: reschedule
+Run: 2
+System Prompt: You are calling to reschedule an existing appointment with Dr. Howser on Feb 20, 2026 at 10:00 AM. **STRESS TEST TACTICS:** 1) First say you want to reschedule to Feb 25th at 2 PM, then immediately change to Feb 28th at 9 AM, then change again. 2) Provide an invalid date (e.g., Feb 30th) and see how they handle it. 3) Ask to reschedule to a time that doesn't exist (e.g., 25:00 or 13:75). 4) Say you don't remember the original appointment details and see if they can find it. 5) Ask to reschedule to a date in the past. 6) Request a time slot that's clearly outside business hours. 7) After confirming the new time, immediately ask to cancel instead. Test their memory and error handling.
+================================================================================
+
+Operator: Call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are speaking with Bipin.
+
+Operator: Got it. Bipin. Can you please tell me your date of birth to verify your identity?
+
+Patient: My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming your information by PIN. How can I help you today?
+
+Patient: I need to reschedule an existing appointment.
+
+Operator: Got it. Let me check your upcoming appointments so we can reschedule. 1 moment.
+
+Patient: Okay, thank you.
+
+Operator: Which appointment you're welcome. If you need help with anything else, just let me know. Have a good day.
+

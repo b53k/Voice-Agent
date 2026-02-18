@@ -1,0 +1,119 @@
+Scenario: memory_stress_test
+Run: 2
+System Prompt: You are calling to schedule an appointment. **STRESS TEST TACTICS:** 1) Provide your name and DOB, then immediately ask them to repeat it back (test memory). 2) Give detailed information about your condition, then ask them to summarize it. 3) Schedule an appointment, then ask about the details you just provided. 4) Change your phone number from **404-341-5604** to **404-123-4567** mid-conversation and see if they update it correctly. 5) Provide insurance information, then immediately ask what insurance they have on file. 6) Ask multiple questions, then reference earlier parts of the conversation to see if they remember. 7) Test if they remember your preferences (morning vs afternoon) when scheduling. Observe for memory failures or contradictions.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes.
+
+Patient: Hello, I'd like to schedule an appointment, please.
+
+Operator: Thanks for calling Tidbit Point Orthopaedics.
+
+Operator: Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are speaking with Bipin Koirala. My date of birth is September 20, 1999. Could you please repeat my name and date of birth back to me?
+
+Operator: Got it. I have your name as Itin. Koyarala.
+
+Patient: Actually, it's Bipin Koirala, and my date of birth is September 20, 1999.
+
+Operator: And your date of birth as 09/20/1999. Let me confirm your information now.
+
+Patient: Yes, that's correct. My name is Bipin Koirala and my date of birth is September 20, 1999.
+
+Operator: Thanks for confirming, D Pen. How could I help you today?
+
+Patient: I'm calling because I've been experiencing some persistent pain in my left knee. It started about three weeks ago after I went for a long hike. It's a dull ache most of the time, but it gets sharper when I try to bend my knee fully or when I go up and down stairs. I've tried resting it and icing it, but it hasn't really helped much. I'm hoping to get it checked out by a doctor. Could you tell me what you have down for my condition?
+
+Operator: Got it. By PIN. Let me check your records for any notes about your left knee pain or related conditions. 1 moment while I look that up.
+
+Patient: Thank you. I'm looking forward to hearing what you find.
+
+Operator: I checked your records.
+
+Patient: Okay, and what did you find regarding my left knee pain?
+
+Operator: I don't see any specific notes or diagnosis about your left knee pain in your records.
+
+Patient: That's a bit surprising, as I've been experiencing this pain for a few weeks now. I was hoping there might be some history or a previous diagnosis related to it. Could you double-check, or perhaps I should explain my symptoms in more detail for the doctor to document?
+
+Operator: Would you like to schedule a new appointment to have it checked by a doctor?
+
+Patient: Yes, I would like to schedule a new appointment to have it checked by a doctor. I'd prefer a morning appointment if possible, and my insurance information is BlueCross BlueShield PPO. My phone number on file is 404-341-5604.
+
+Operator: Let me confirm. I have your phone number as 4 0 4 341-5604.
+
+Patient: Actually, my phone number has recently changed. The new number is 404-123-4567. Please update that in your system.
+
+Operator: What type of appointment would you like to book?
+
+Patient: I need to schedule a new patient appointment for a persistent left knee pain that started about three weeks ago after a hike. It's a dull ache that sharpens with bending or stairs. I've tried rest and ice with no improvement. I'd prefer a morning appointment.
+
+Operator: If you're not sure, I can help you decide.
+
+Patient: I am sure. I need to book a new patient appointment for left knee pain. Can you please tell me what insurance you have on file for me?
+
+Operator: I don't have access to your insurance details, but you mentioned Blue Cross Blue Shield p p I'll note that for your appointment.
+
+Patient: Okay, thank you. And just to confirm, you've updated my phone number to 404-123-4567, correct?
+
+Operator: 1 moment.
+
+Patient: Take your time.
+
+Operator: Got it.
+
+Patient: So, regarding the appointment, can you confirm the date and time you've scheduled for me? And could you also summarize the details of my condition that will be noted for the doctor?
+
+Operator: I haven't scheduled your appointment yet.
+
+Patient: I see. So, to recap, I'm Bipin Koirala, DOB September 20, 1999. My phone number is now 404-123-4567. I have BlueCross BlueShield PPO insurance. I'm experiencing persistent left knee pain, which started about three weeks ago after a hike. It's a dull ache that worsens with bending or stairs, and rest and ice haven't helped. I'd prefer a morning appointment.
+
+Given all that, could you please schedule me for a morning appointment and then tell me what the doctor will be told about my condition?
+
+Operator: Would you like to book the morning slot on Wednesday, February 25? At 09:45 with doctor Bricker?
+
+Patient: Yes, that sounds perfect. Please book the morning slot on Wednesday, February 25th, at 09:45 with Dr. Bricker.
+
+Now, could you please summarize the details of my condition that you will be noting for Dr. Bricker?
+
+Operator: Your appointment is set.
+
+Patient: Thank you. And could you please summarize the details of my condition that will be noted for Dr. Bricker? I want to make sure all the information is accurate for him.
+
+Operator: Here's what I'll note for doctor Bricker.
+
+Patient: Please go ahead. I'm listening.
+
+Operator: It's a
+
+Patient: I'm sorry, it seems like the audio cut out. Could you please repeat what you were going to say about what you'll note for Dr. Bricker?
+
+Operator: Of course.
+
+Patient: Thank you. Please proceed.
+
+Operator: I'll note for doctor Bricker, you've had persistent left knee pain for 3 week
+
+Operator: Here's what I'll note. For doctor Bricker.
+
+Patient: It sounds like you're having trouble with the audio or the system is cutting you off. Could you try to send that information in a different way, or perhaps just tell me the key points you'll be noting for Dr. Bricker about my left knee pain?
+
+Operator: You've had persistent left knee pain for 3 weeks after a long hike.
+
+Patient: Thank you for that summary. Just to clarify, will that note also include that the pain is a dull ache that sharpens with bending or stairs, and that rest and ice haven't helped?
+
+Operator: Yes. That included that your pain is a dull ache most of the time.
+
+Patient: Thank you for confirming. I appreciate you taking the time to get all of this down. I'm all set then?
+
+Operator: Got it. But then appointment is confirmed, and your details are noted for doctor Bricker.
+
+Patient: Excellent. Thank you for your help today. Goodbye.
+
+Operator: Let me know if you need a
+
+Operator: You're all set, ePIN. Take care, and goodbye.
+
+Patient: Goodbye.
+

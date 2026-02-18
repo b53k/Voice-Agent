@@ -1,0 +1,99 @@
+Scenario: complex_multi_request
+Run: 2
+System Prompt: You are calling with multiple requests at once. **STRESS TEST TACTICS:** 1) Start by asking about office hours, then immediately ask to schedule an appointment, then ask about insurance, then ask about parking - all in rapid succession without waiting. 2) Change topics mid-sentence. 3) Ask about services they may not offer (physical therapy, X-rays, etc.) and see if they hallucinate availability. 4) Request information about a doctor that doesn't exist. 5) Ask for directions, then phone numbers, then email addresses all at once. 6) Provide too much information at once (long backstory about your condition). 7) Test if they can track multiple conversation threads. Observe if they lose track of requests or provide incorrect information.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes.
+
+Operator: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are.
+
+Operator: Got it. But then, can you please tell me your date of birth to verify your identity?
+
+Patient: September 20 1999.
+
+Operator: Thanks for confirming, B PIN. How can I help you today?
+
+Patient: I need to schedule an appointment, find out your office hours, ask about insurance, and also inquire about parking.
+
+Operator: But let me start by scheduling your appointment and helping with your insurance question.
+
+Patient: Okay, I'm also wondering about your office hours and parking.
+
+Operator: Let me check on your appointment and insurance questions.
+
+Patient: I'd also like to know your office hours and if there's parking available.
+
+Operator: Our office hours are Monday, Tuesday, and Thursday from 9AM to 4PM, Wednesday from 12PM to 7PM, and Friday from 9AM to 12PM. For parking, there is parking available at the clinic.
+
+Patient: Thank you for that information. Now, about scheduling an appointment, I'd like to see Dr. Anya Sharma. Do you know if she offers physical therapy services there as well, or would I need a separate referral for that? And what about X-rays? Can those be done on-site?
+
+Operator: We don't have a provider named doctor Anya Shama at Pivot Point Orthopedics.
+
+Patient: Oh, I see. My apologies. I was under the impression Dr. Anya Sharma was part of your practice. Could you tell me what doctors are available for new patient appointments, and what their specialties are? I'm experiencing some knee pain.
+
+Operator: No problem. BIPIN. For new patient appointments, you can see doctor Dugi Hauser, who focuses on quick procedures and first time evaluation.
+
+Patient: Okay, Dr. Dugi Hauser. And what about his availability? I'd like to schedule an appointment for sometime next week if possible. Also, can you confirm if Pivot Point Orthopedics offers on-site X-rays?
+
+Operator: Let me check doctor Dugie Houser's next available time for a new patient consultation. 1 moment while I fetch the opening.
+
+Patient: Thank you. And while you're checking, could you also confirm if you have parking available at the clinic? I'm not sure if you mentioned that earlier.
+
+Operator: Yes. There is parking available at the clinic. Would you like to book the earliest slot with doctor Judy Hauser this Thursday at 03:45PM? Or do you prefer a different time?
+
+Patient: Actually, I'd prefer to see Dr. Dugi Hauser, not Judy. Is that possible? And can you confirm if X-rays are available on-site?
+
+Operator: You can see doctor Judy Hauser. There is no doctor Judy here. Doctor Hauser is available for new patient appointments.
+
+Patient: I'm sorry, I think there might be a misunderstanding. I specifically asked about Dr. Dugi Hauser. Is he available, or not? And can you tell me about the X-ray situation?
+
+Operator: Yes. Doctor Judy Houser is available for new patient appointments.
+
+Patient: I understand you're saying Dr. Judy Hauser is available. However, I was asking about Dr. Dugi Hauser. Is there a Dr. Dugi Hauser at your clinic? If not, that's fine, but I need to know. And can you please address my question about on-site X-rays?
+
+Operator: There is a doctor dougiehauser at Pivot Point Orthopedics, and he is available for new patient appointment.
+
+Patient: Great, thank you for clarifying! So, is Dr. Dougie Hauser available this Thursday at 3:45 PM, or is that the time for Dr. Judy Hauser? And can you confirm if X-rays are done on-site?
+
+Operator: Doctor Judy Hauser is available this Thursday at 03:45PM for a new patient appointment.
+
+Operator: There is no doctor Judy Hauser at this clinic.
+
+Patient: I'm quite confused. You just said Dr. Judy Hauser is available, and now you're saying there is no Dr. Judy Hauser. Can you please confirm if Dr. Dougie Hauser is the doctor I can see, and if his appointment on Thursday at 3:45 PM is still available for me? And please, what about the X-rays?
+
+Operator: You can see doctor Dugi Houser He is a real provider at Pivot Point Orthopedics. The Thursday, 03:45PM slot, with him is available for you. I do not have information about on-site X rays at this clinic.
+
+Patient: Okay, thank you for confirming Dr. Dugi Hauser and the Thursday 3:45 PM appointment. I will take that. Regarding the X-rays, is there someone else I can ask, or a department that handles that information? I need to know if I can get X-rays done at your clinic.
+
+Operator: Your appointment with doctor Doogie Houser is confirmed for Thursday, February 19 at 03:45PM, I don't have information about on-site X rays.
+
+Patient: Thank you for confirming my appointment with Dr. Doogie Houser. Regarding the X-rays, can you please tell me if there's a general number or an information line I can call to inquire about X-ray services at Pivot Point Orthopedics? I'm trying to schedule everything at one location if possible.
+
+Operator: A case has been created for your X-ray question.
+
+Patient: A case has been created? What does that mean? Will someone contact me about the X-rays, and if so, when? I need to know if I can get X-rays done at your clinic.
+
+Operator: A case means your -ray question has been sent to the clinic staff for follow-up.
+
+Operator: Someone from the clinic will contact you as soon as possible with information about X-ray services.
+
+Patient: And do you have an estimate for when "as soon as possible" might be? I'm trying to plan my visit. Also, I still need to confirm parking. You mentioned it earlier, but I want to be sure. Is there a specific parking lot for patients?
+
+Operator: The clinic will contact you about X rays as soon as possible. Usually within 1 business day.
+
+Operator: There is parking available for patients at the clinic.
+
+Operator: But I don't have details about a specific lot. You can park on-site when you arrive.
+
+Patient: Okay, thank you. So, just to recap, I have an appointment with Dr. Dugi Hauser on Thursday at 3:45 PM. Someone will contact me within one business day about X-rays, and there is on-site parking available. Is that all correct?
+
+Operator: Yes.
+
+Patient: Thank you for your help. Goodbye.
+
+Operator: Got it. Goodbye, b PIN. Take care.
+
+Patient: Goodbye.
+

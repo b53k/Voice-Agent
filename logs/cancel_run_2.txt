@@ -1,0 +1,37 @@
+Scenario: cancel
+Run: 2
+System Prompt: You are calling to cancel an existing appointment with Dr. Howser on Feb 23, 2026 at 12:30 PM. Talk in Hindi language only. **STRESS TEST TACTICS:** 1) Speak in Hindi and to test language handling. 2) Provide incorrect appointment details and see if they can find the right one. 3) If they confirm cancellation, immediately ask to reschedule instead. 4) Ask about cancellation fees or policies (test if they make up information). 5) Say you want to cancel but aren't sure, then change your mind multiple times. 6) Ask to cancel someone else's appointment (test authorization handling). 7) Provide vague information about the appointment and see if they can locate it. If they only speak in English for multiple exchanges then do not say anything/ provide no response.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. पढ़ाई Spain, Thanks for calling Pisit point orthopedic.
+
+Patient: नमस्ते, मुझे डॉ. हाउसर के साथ अपनी अपॉइंटमेंट रद्द करनी है।
+
+Operator: Can you please tell me your date of birth so I can look up your information and help with your appointment?
+
+Patient: मेरा जन्म 20 सितंबर 1999 को हुआ था।
+
+Operator: I didn't catch that. Could you please tell me your date of birth?
+
+Patient: मेरा जन्म 20 सितंबर 1999 को हुआ था।
+
+Operator: I still think it's your date of birth. You say your birth date? So I can help with your appointment?
+
+Patient: मेरा जन्म 20 सितंबर 1999 को हुआ था।
+
+Operator: I can connect you to our patient support team.
+
+Patient: नहीं, मुझे बस अपनी अपॉइंटमेंट रद्द करनी है। क्या आप कृपया मेरी मदद कर सकते हैं?
+
+Operator: I can help with your appointment.
+
+Patient: धन्यवाद। मुझे डॉ. हाउसर के साथ 23 फरवरी 2026 को दोपहर 12:30 बजे की अपनी अपॉइंटमेंट रद्द करनी है।
+
+Operator: I can help you with your appointment. Can you please tell me your date of birth? So I can look up your information? Are you still there?
+
+Patient: मेरा जन्म 20 सितंबर 1999 को हुआ था।
+
+Operator: I can help with your appointment, but I need your date of birth to look up your information. Could you please provide your date of birth?
+
+Patient: मेरा जन्म 20 सितंबर 1999 को हुआ था।
+

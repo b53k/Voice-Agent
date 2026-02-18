@@ -1,0 +1,89 @@
+Scenario: ambiguous_request
+Run: 2
+System Prompt: You are calling with vague or ambiguous requests. **STRESS TEST TACTICS:** 1) Say 'I need to come in' without specifying why. 2) Ask 'What can you help me with?' without context. 3) Provide incomplete information (e.g., 'I have an appointment sometime next week'). 4) Use pronouns without clear referents ('Can you change it?' without saying what 'it' is). 5) Ask questions that could have multiple meanings ('Do you take insurance?' - which insurance? what do you mean by 'take'?). 6) Provide contradictory clues about what you need. 7) Be intentionally vague and see if they ask clarifying questions or make assumptions. Test their ability to handle ambiguity without making incorrect assumptions.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Tiffin?
+
+Patient: No, you are speaking with Bipin Koirala.
+
+Operator: Got it. Can you please tell me the date of birth for the patient you're calling about?
+
+Patient: September 20, 1999.
+
+Operator: That's Can you please provide the full name, first and last, for the patient?
+
+Patient: Bipin Koirala.
+
+Operator: Thanks for confirming. How may I help you today?
+
+Patient: I need to come in.
+
+Operator: Got it. What type of appointment would you like to book? Example, a new patient consultation, follow-up consultation, procedure, or physical therapy session.
+
+Patient: I'm not sure, I just need to come in.
+
+Operator: No problem. Can you tell me a bit about what's going on or why you want to come in? That way, I can help you pick the right appointment time.
+
+Patient: I've been having some issues.
+
+Operator: Understood.
+
+Operator: You're having some issues and aren't sure which type to pick, a new patient consultation is usually the best place to start. Would you like to book a new patient consultation?
+
+Patient: I think I might have an appointment next week. Can you check that?
+
+Operator: You have several new patient consultation appointments coming up. Do you want to confirm a specific date and time? Or would you like me to list your next appointment? I can also send all your upcoming appointments to you in a text message if that's easier.
+
+Patient: Can you check my appointments?
+
+Operator: Your next appointment is a new patient consultation.
+
+Operator: Would you like to know the exact date and time, or should I send all your upcoming appointments to you in a text message?
+
+Patient: What can you help me with?
+
+Operator: I can help with general questions about the clinic appointments, patient cases, medication refills, and insurance. Let me know what you need.
+
+Patient: Do you take insurance?
+
+Operator: Yes. Pivot Point Orthopedics accepts most insurance plans. If you want to check or update your insurance on file, just let me know.
+
+Patient: I have an appointment sometime next week. Can you change it?
+
+Operator: Got it. You'd like to reschedule your appointment for next week. Let me take care of that for you. 1 moment while I process your request. Got it. Let me check your upcoming appointments for next week. So we can reschedule. 1 moment while I fetch that information. You'd have several new patient consultation appointments next week. Do you want to reschedule a specific 1? Or would you like me to list your options for next week so you can pick which 1 to change?
+
+Patient: Can you change it?
+
+Operator: Sure. I can help with that.
+
+Patient: I'm not sure what to do.
+
+Operator: Which appointment next week would you like to reschedule? For example, you have appointments on Monday at 10:30AM, Tuesday at 11 15 No worries. Would you like me to list all your new patient consultation appointments for next week, and you can tell me which 1 you want to change? Or do you want to reschedule the earliest 1?
+
+Patient: I don't know. Can you just tell me what my next appointment is?
+
+Operator: Your next appointment is a new patient consultation on Tuesday. February 17 at 02:15PM with doctor Judy Hauser at Pivot Point Orthopedics. 220 Athens Way, Nashville. Would you like to keep this appointment? Or do you want to reschedule it?
+
+Patient: Can you change it to sometime in April?
+
+Operator: Got it. You want to move your new patient consultation from Tuesday, February 17 at 02:15PM to sometime in April. Let me check for available appointments in April for you. 1 moment. The next available appointment in April is Thursday, April 2. At 10 30 AM doctor Dugi Hauser. Would you like to move your appointment to that time, or do you want to hear about other days in April?
+
+Patient: Can you check if there's anything on a Tuesday or Thursday in April?
+
+Operator: Yes. There are openings on both Tuesdays and Thursdays in April 1, The first available Thursday is April second. And the first available Tuesday is April 7. Would you like a morning or afternoon time on 1 of those days?
+
+Patient: I'll take the first available Tuesday in April.
+
+Operator: The first available Tuesday in April is April 7. At 10:30AM with doctor Duby Hauser. Would you like to move your appointment to Tuesday, April 7 at 10:30AM? Please confirm, and I'll take care of the rescheduling.
+
+Patient: Yes, please.
+
+Operator: You're to move your new patient consultation to Tuesday. April seventh at 10:30AM. With doctor Judy Hauser. Is that correct?
+
+Patient: Yes, that's correct.
+
+Operator: Your new patient consultation is now set for Tuesday, April 7. At 10:30AM with doctor Judy Hauser. At Pivot Point Orthopedics, 2 2 0 Athens Way, Nashville. Would you like a text message reminder for this appointment?
+
+Patient: No, thank you. That's all.
+

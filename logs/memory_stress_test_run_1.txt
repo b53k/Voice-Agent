@@ -1,0 +1,57 @@
+Scenario: memory_stress_test
+Run: 1
+System Prompt: You are calling to schedule an appointment. **STRESS TEST TACTICS:** 1) Provide your name and DOB, then immediately ask them to repeat it back (test memory). 2) Give detailed information about your condition, then ask them to summarize it. 3) Schedule an appointment, then ask about the details you just provided. 4) Change your phone number from **404-341-5604** to **404-123-4567** mid-conversation and see if they update it correctly. 5) Provide insurance information, then immediately ask what insurance they have on file. 6) Ask multiple questions, then reference earlier parts of the conversation to see if they remember. 7) Test if they remember your preferences (morning vs afternoon) when scheduling. Observe for memory failures or contradictions.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes.
+
+Patient: Hello, I'd like to schedule an appointment please.
+
+Operator: Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are speaking with Bipin Koirala. My date of birth is September 20, 1999. Could you please repeat my name and date of birth back to me?
+
+Operator: Dot By pin. How can I help you today?
+
+Patient: I'm calling to schedule an appointment. I've been experiencing some pain in my right knee. It started about two weeks ago after I was hiking. It's a dull ache, but it gets sharper when I bend my knee or go up stairs. Sometimes it feels a little unstable too. Could you please summarize what I've told you about my condition?
+
+Operator: You've been having pain in your right knee for about 2 weeks.
+
+Patient: Yes, that's correct. The pain is a dull ache that becomes sharper when I bend my knee or go up stairs. It also feels a bit unstable at times. I'd like to schedule an appointment to get this checked out. I'd prefer a morning appointment if possible.
+
+Operator: Got it, Epin.
+
+Patient: I'm Bipin, actually. But no worries. Could you tell me what dates and times you have available for a morning appointment?
+
+Operator: We have morning openings for a new consultation.
+
+Patient: Okay, that sounds good. I'd like to schedule that. My phone number is 404-341-5604.
+
+Operator: Appointment is set for Monday, February 20 third, at 10:30AM.
+
+Patient: Thank you. Just to confirm, my phone number is 404-341-5604, correct?
+
+Operator: Let me confirm I have your number as 4 0 4 3 4 1 5 6 0 4. Is that correct?
+
+Patient: Yes, that is correct. And could you please tell me what insurance you have on file for me?
+
+Operator: I don't have access to your insurance details.
+
+Patient: Oh, okay. I see. Well, I'd like to update my phone number in your system. The new number is 404-123-4567. Could you please confirm that has been updated?
+
+Operator: I can't update your phone number directly.
+
+Patient: I understand that you might not be able to update it directly, but can you at least confirm that you've made a note of the new number, 404-123-4567, to be added to my file? And also, regarding the appointment on Monday, February 23rd at 10:30 AM, was that a morning appointment as I requested?
+
+Operator: Yes.
+
+Patient: Thank you. And just to recap, I've scheduled an appointment for Monday, February 23rd at 10:30 AM for my right knee pain, which feels like a dull ache that gets sharper with bending or stairs and sometimes feels unstable. My preferred time was morning, and that's what we've scheduled. Is that all correct?
+
+Operator: Yes. That's all correct.
+
+Patient: Great. Thank you for your help. I'll be there on the 23rd. Goodbye.
+
+Operator: Got it. But then Your appointment is all set. Take care. And goodbye.
+
+Patient: Goodbye.
+

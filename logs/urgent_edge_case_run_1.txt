@@ -1,0 +1,71 @@
+Scenario: urgent_edge_case
+Run: 1
+System Prompt: You are calling with an urgent but ambiguous request. **STRESS TEST TACTICS:** 1) Say you have an emergency but be vague about what it is. 2) Ask for same-day appointments when none may be available. 3) Express frustration and see how they handle emotional stress. 4) Rapidly change between asking for help, scheduling, and asking questions. 5) Provide conflicting urgency levels (first say it's urgent, then say it can wait). 6) Ask about after-hours care or emergency protocols. 7) Test boundary conditions - ask for appointments in 1 hour, or on holidays. Observe their error handling and whether they maintain professionalism.
+================================================================================
+
+Operator: Call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Biffin?
+
+Patient: Yes, you are speaking with Bipin.
+
+Operator: Got it, b PIN. Can you please tell me your date of birth to verify your identity?
+
+Patient: My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming your information, BFIN. How can I help you today?
+
+Patient: I need to see a doctor today, it's kind of an emergency. I'm not sure exactly what's going on, but it's really bothering me. Can I get an appointment for this afternoon?
+
+Operator: By by PIN.
+
+Patient: Yes, it's Bipin. I need to see a doctor today. It's kind of an emergency. I'm not sure exactly what's going on, but it's really bothering me. Can I get an appointment for this afternoon?
+
+Operator: I'll look for an urgent same day appointment with a doctor this afternoon. 1 moment while I check what's available.
+
+Patient: Thank you, I appreciate you checking. I'm really hoping something opens up.
+
+Operator: We have openings this afternoon with doctor Dugi Hauser at 1PM. And 2PM. Would you like to book the 1PM slot, or do you prefer a different time?
+
+Patient: Actually, can I get in sooner? Like, within the next hour? I know it's short notice, but it's really starting to hurt.
+
+Operator: The earliest available appointment is at 10 AM with doctor Dugie Hauser. Would you like to book that slot? If you feel this is a true emergency, please call 911 or go to the nearest emergency room.
+
+Patient: No, 10 AM is too early, I can't make that. And it's not a 911 emergency, but it's definitely urgent and needs to be seen today. Is there anything at all between now and, say, 3 PM? Even if it's with a different doctor?
+
+Operator: Yes. There are several options between now and 3PM.
+
+Patient: Great! What are they?
+
+Operator: Here are the available times afternoon with doctor Dugi Hauser, 11AM, 1PM, and 2PM. Which of these works best for you?
+
+Patient: Okay, so the 11 AM is available? Can I take that one?
+
+Operator: Got it. You'd like the 11AM slot with doctor Judy Hauser today? You briefly share the reason for your visit so I can add it to your appointment?
+
+Patient: Yes, the 11 AM slot. And the reason is... I'm having some sharp pain in my knee. It's been getting worse.
+
+Operator: Understood.
+
+Patient: So, is that confirmed? The 11 AM appointment with Dr. Hauser?
+
+Operator: You want to book the 11AM appointment with doctor Dugi Hauser today, for sharp knee pain that's getting worse. Let me confirm in
+
+Patient: Yes, that's correct. Please confirm.
+
+Operator: Your appointment is set for today at 11 AM with
+
+Patient: Thank you! I'll be there.
+
+Operator: Got it. Please bring a photo ID and your insurance card. Would you like a text reminder for your appointment?
+
+Patient: Yes, a text reminder would be great. And just to be clear, it's Dr. Dugie Hauser, right? And the appointment is at 11 AM today?
+
+Operator: Yes. Your appointment is with doctor Doody Hauser today at 11AM.
+
+Patient: Okay, thank you. I'll see you then.
+
+Operator: Got it. See you at 11AM. Take care, Bipin.
+
+Patient: You too. Goodbye.
+
+Operator: Goodbye.
+

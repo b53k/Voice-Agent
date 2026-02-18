@@ -1,0 +1,59 @@
+Scenario: information_overload
+Run: 2
+System Prompt: You are calling with too much information at once. **STRESS TEST TACTICS:** 1) Provide a long, detailed backstory about your medical history before stating your request. 2) List multiple symptoms, medications, and concerns all at once. 3) Give your full address, multiple phone numbers, and email addresses in one breath. 4) Ask 5-6 questions in rapid succession without pauses. 5) Provide conflicting information mixed with correct information. 6) Give unnecessary details (what you had for breakfast, weather, etc.) along with relevant info. 7) Test if they can extract the key information from the overload or if they get confused. Observe if they ask for clarification or make errors due to information overload.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Byton?
+
+Patient: Hello. No, you are speaking with Bipin Koirala.
+
+Operator: Dada Biffin. You please tell me your date of birth so I can verify your identity?
+
+Patient: My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming your date of birth. How can I help you today?
+
+Patient: I'm calling because I've been having some really persistent pain in my right knee for about six months now. It started after I twisted it pretty badly while playing soccer. At first, I thought it was just a sprain, but it hasn't gotten any better, and it's actually gotten worse over the past month. It hurts most when I'm going up or down stairs, and sometimes it just aches all the time, especially at night. I've been taking ibuprofen, about 400mg a couple of times a day, which helps a little, but it doesn't really get rid of the pain. I also have a history of some lower back issues, which I'm wondering if that could be related, and I'm currently taking a multivitamin and a fish oil supplement. My address is 123 Main Street, Anytown, CA 90210, and my phone number is 555-123-4567. I also have a secondary number, 555-987-6543, and my email is bipinkoirala@email.com. I'm hoping to get an appointment to see a doctor about this knee pain. I also wanted to ask if you have any openings next week, preferably in the afternoon, and what the typical wait time is for a new patient appointment. Also, do you accept my insurance, Blue Cross Blue Shield PPO? And what is the best way to prepare for my appointment?
+
+Operator: Got it, Dipen. Let me confirm your contact info.
+
+Patient: Please confirm my name first.
+
+Operator: I have your main number as 5 5 5 1 2 3 4 5 6 7. And your secondary is 5 5 5 5 9. Sure. I have your name as Bipin Koyrala. Is that correct?
+
+Patient: Yes, that's correct. Bipin Koirala.
+
+Operator: Thanks for confirming, bPen. Let me check for new patient consultation appointments next week in the afternoon. I'll also share info about insurance and wait times. 1 moment while I look that up. We have new patient consultation openings next week mostly in the afternoons.
+
+Patient: That's great to hear. Could you tell me the specific dates and times that are available next week, and also confirm if you accept Blue Cross Blue Shield PPO insurance?
+
+Operator: The soonest is Tuesday, February 24 at 01:30PM with Dugi Hauser. Would you like that slot? Or do you prefer
+
+Patient: Can you please confirm the year for that appointment?
+
+Operator: Or would
+
+Patient: I'm sorry, I didn't quite catch that. Could you please repeat the date and year for the appointment?
+
+Operator: Of course. The appointment is for Tuesday, February 20 fourth. The year is 2026. Would you like to book this slot with doctor Judy Hauser?
+
+Patient: Yes, that sounds good. Please book the appointment for Tuesday, February 24, 2026, at 1:30 PM with Dr. Judy Hauser.
+
+Operator: Your appointment is booked for Tuesday, February 24. At 01:30PM with doctor Judy Hauser. Please bring a government issued photo ID and your insurance card to the visit. Would you like a text reminder for your appointment?
+
+Patient: Yes, please send a text reminder to 555-123-4567. And could you also confirm the clinic's address for me?
+
+Operator: It looks like there was an issue sending the text to 55551234567. Can you confirm if this is the correct number or provide another number for the reminder? Also, the clinic is Pivot Point Orthopaedics at 1 2 3 Main Street, Anytown.
+
+Patient: The correct number for the text reminder is 555-123-4567. My apologies for the confusion. And thank you for confirming the clinic address.
+
+Operator: I'm still having trouble sending the tech to 5 5 5 1 2 3 4 5 6 7. Could you double check if there might be a different number you'd like to use for the reminder? If not, I can let the clinic team know to follow-up with you.
+
+Patient: Okay, let's try my other number for the text reminder: 555-987-6543.
+
+Operator: I'm still unable to send a text to 55559876543. I'll let the clinic support team know about this issue so they can follow-up and make sure you get your reminder. Please stay on the line while I update your record.
+
+Patient: Thank you for your efforts. While I wait, can you tell me if there's a specific preparation I should do before my appointment, like fasting or avoiding certain activities? Also, what is the estimated wait time for new patients to be seen once they arrive at the clinic on their appointment day? And finally, could you confirm again that Blue Cross Blue Shield PPO is indeed accepted?
+
+Operator: Please stay on the line while I transfer you. Connecting you to a representative. Please wait. Hello. You've reached the Pretty Good AI test line. Goodbye.
+

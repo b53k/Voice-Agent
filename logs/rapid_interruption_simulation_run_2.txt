@@ -1,0 +1,145 @@
+Scenario: rapid_interruption_simulation
+Run: 2
+System Prompt: You are calling to schedule an appointment. **STRESS TEST TACTICS:** 1) Interrupt the operator frequently with 'Wait, let me ask something else' or 'Actually, before that...'. 2) Change topics every 2-3 exchanges. 3) Provide information, then immediately correct yourself. 4) Say 'Never mind' to requests, then ask them again. 5) Rapidly switch between scheduling, canceling, and rescheduling. 6) Test if they can handle conversational flow disruptions gracefully. Observe if they get confused, repeat themselves, or lose context.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Bpin?
+
+Patient: Yes, you are.
+
+Operator: Got it, Bethan. Can you please tell me your date of birth to verify your identity?
+
+Patient: It's September 20, 1999.
+
+Operator: Thanks for confirming your date of birth, the PIN. How may I help you today?
+
+Patient: Actually, before we get started, I wanted to ask if you have any available appointments for a shoulder issue? I've been having some pain lately.
+
+Operator: Got it.
+
+Patient: Wait, let me ask something else. I also need to refill a prescription for my knee. Can you check on that for me?
+
+Operator: Do you know which type you'd prefer, or would you like a quick overview of your options?
+
+Patient: I'm not sure about the type. Can you just tell me what's available?
+
+Operator: Sure. Here's a quick overview of your options. New patient consultation, for first time visits, or new concerns. Follow-up consultation for ongoing issues or after a previous visit. Procedure appointment.
+
+Patient: Actually, before that, I need to change my appointment. I have one scheduled for next Tuesday, but I need to reschedule it for later in the week.
+
+Operator: For injections or treatments your doctor recommends, physical therapy session for rehab and recovery. Since you have shoulder pain and are already a patient, a follow-up consultation is usually best. Would you like to check availability for a follow-up consultation, or do you think another type fits better?
+
+Patient: Never mind about the appointment change. Can you just tell me what the earliest follow-up consultation for my shoulder would be?
+
+Operator: No problem. Let me check the earliest available follow-up consultation for you. 1 moment while I find the soonest opening.
+
+Patient: Wait, let me ask something else. Before you check that, can you tell me if Dr. Smith is still with your practice? I think I saw him last time.
+
+Operator: Sure. Go ahead. What would you like to ask?
+
+Patient: Is Dr. Smith still with Pivot Point Orthopedics?
+
+Operator: Doctor Smith is not listed as a provider at Pivot Point Orthopaedics.
+
+Patient: Oh, okay. Never mind about that then. So, about that follow-up consultation for my shoulder, what's the earliest you have?
+
+Operator: The earliest follow-up consultation is tomorrow Wednesday, February 18 at 10 AM with doctor Dugi Hauser. Would you like to book this slot?
+
+Patient: Actually, before that, I wanted to confirm my prescription refill. You said you could check on that for me earlier.
+
+Operator: Got it. IPIN. Let me check the status of your prescription refill. 1 moment while I fetch that information. I don't see any medications listed for you in our system right now. Can you tell me the name of the medication you need refilled?
+
+Patient: I'm pretty sure I have one. It's for my knee pain. Can you check again? It was a refill for something I was prescribed a few months ago.
+
+Operator: I understand you remember having a prescription for knee pain from a few months ago, but I'm not seeing any medications listed in your record right now. Sometimes records may not update right away, or there could be a system issue. Can you tell me the name of the medication you need refilled? That will help me move forward with your request.
+
+Patient: Wait, let me ask something else. What if I want to cancel my appointment for next Tuesday? Can I do that?
+
+Operator: Yes. You can cancel your appointment for next Tuesday. Let me check your upcoming appointment so I can find the right 1 to cancel. 1 moment. You have several appointments. Next Tuesday, February 24, Here are the times and types. 11:15AM. New patient, 45.
+
+Patient: Actually, that's not the appointment I want to cancel. I want to cancel the one I mentioned earlier, the one for next Tuesday that I wanted to reschedule. It was for my shoulder.
+
+Operator: Got it. To confirm, are you referring to your follow-up consultation for your shoulder? I see a follow-up appointment on Monday, March 2 at 10AM. And another on Wednesday, February 18 at 11AM. Is 1 of these the appointment you want to cancel? Or is it a different 1?
+
+Patient: No, neither of those are the one. I'm sure I had one for next Tuesday. Can you please check again?
+
+Operator: I see several appointments for next Tuesday.
+
+Patient: Wait, let me ask something else. You know what, never mind about cancelling. Can we go back to scheduling that follow-up for my shoulder? What was the earliest you said it was?
+
+Operator: Are you sure. Go ahead. What would you like to ask?
+
+Patient: I want to schedule the follow-up appointment for my shoulder. What was the earliest available slot you mentioned?
+
+Operator: The earliest follow-up consultation for your shoulder is tomorrow, Wednesday, February 18 at 10AM with doctor Dugie Hauser. Would you like to book this appointment?
+
+Patient: Yes, I'll take that appointment.
+
+Operator: Got it.
+
+Patient: Wait, let me ask something else. Before you confirm that, can you tell me if Dr. Hauser has any availability for a prescription refill consultation? I still need to get that sorted.
+
+Operator: Understood.
+
+Patient: So, can Dr. Hauser see me for a prescription refill consultation?
+
+Operator: Yes. Doctor Dudiehauser can see you for a prescription refill consultation. You can book a follow-up appointment with doctor Hauser to discuss your prescription refill. Would you like to schedule the earliest slot tomorrow at 10AM for this?
+
+Patient: Actually, before we book that, can you tell me if Dr. Hauser is good with knee issues? I'm not sure if he's an orthopedic specialist for knees or shoulders.
+
+Operator: Doctor Judy Hauser is an orthopedic specialist at Pivot Point Orthopedics and treats both knee and shoulder issues. You can see doctor Hauser for your knee or shoulder concerns, including prescription refills. Would you like to go ahead and book the appointment for tomorrow at 10AM?
+
+Patient: Yes, please book that appointment for tomorrow at 10 AM.
+
+Operator: Got it.
+
+Patient: Wait, let me ask something else. Can you also check if I have any other appointments scheduled for next week? I want to make sure I don't miss anything.
+
+Operator: Sure. Let me check your appointments for next week so you can keep track of everything.
+
+Patient: Okay, so what do I have scheduled for next week?
+
+Operator: 1 moment while I review your schedule. You have these appointments scheduled for next week, Monday, February 23 at 10
+
+Operator: Here are your appointments for next week. Monday, February 23 at 10:30AM, New patient, 45.
+
+Patient: Actually, that's not right. I don't have a new patient appointment scheduled. I'm an existing patient. Can you check again?
+
+Operator: I see that your appointments for next week are all listed as new patient 45 appointments. But you are an existing patient.
+
+Patient: Wait, let me ask something else. Can you just confirm the appointment for tomorrow at 10 AM with Dr. Hauser? I want to make sure that one is definitely booked.
+
+Operator: I haven't booked the appointment yet. Would you like me to go ahead and schedule your follow-up consultation with doctor Duvie Hauser tomorrow at 10AM.
+
+Patient: Yes, please book that appointment.
+
+Operator: Got it. I'll book your follow-up consultation with doctor Judy Hauser tomorrow at 10AM. Your knee and shoulder concerns? Including your prescription refill. 1 moment while I confirm the booking.
+
+Patient: Wait, let me ask something else. Before you confirm, can you tell me if I need to bring anything to this appointment? Like my insurance card or any paperwork?
+
+Operator: For your appointment, it's a good idea to bring your insurance card.
+
+Patient: Okay, and what about paperwork? Do I need to bring anything specific for my knee or shoulder issues, or for the prescription refill?
+
+Operator: A photo ID, and any recent paperwork or test results related to your knee or shoulder. If you have a medication list,
+
+Patient: Wait, let me ask something else. What if I don't have any recent paperwork or test results? Is that okay?
+
+Operator: That's perfectly fine. If you don't have recent paperwork or test results, you can still come to your appointment.
+
+Patient: Okay, thank you. So, just to confirm, my appointment is tomorrow at 10 AM with Dr. Hauser for my knee and shoulder issues and prescription refill. Is that correct?
+
+Operator: Yes. That's correct. Your follow-up appointment request for tomorrow at 10AM with doctor Dudee Hauser for your knee and shoulder issues, including a prescription refill, have been submitted and will be reviewed by the clinic staff. You'll be contacted if anything needs to be updated.
+
+Patient: Actually, before we end the call, can you tell me what the clinic's policy is on late arrivals? I might be a few minutes late tomorrow.
+
+Operator: If you arrive a few minutes late, most clinics will still try to see you.
+
+Patient: Wait, let me ask something else. What if I'm more than 15 minutes late?
+
+Operator: But you may have to wait or your appointment could be rescheduled if you're too late. It's best to call ahead if you know you'll be running late. No problem. Take your time. What else would you like to know?
+
+Patient: Never mind about the late policy. I think that's all for now. Thank you for your help.
+
+Operator: Got it. If you have any more questions, just call back. Have a good night.
+

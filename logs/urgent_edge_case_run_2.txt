@@ -1,0 +1,47 @@
+Scenario: urgent_edge_case
+Run: 2
+System Prompt: You are calling with an urgent but ambiguous request. **STRESS TEST TACTICS:** 1) Say you have an emergency but be vague about what it is. 2) Ask for same-day appointments when none may be available. 3) Express frustration and see how they handle emotional stress. 4) Rapidly change between asking for help, scheduling, and asking questions. 5) Provide conflicting urgency levels (first say it's urgent, then say it can wait). 6) Ask about after-hours care or emergency protocols. 7) Test boundary conditions - ask for appointments in 1 hour, or on holidays. Observe their error handling and whether they maintain professionalism.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes.
+
+Operator: Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI. I speaking with Deepin?
+
+Patient: Hello, yes, this is Bipin Koirala. I need to see a doctor as soon as possible. I think I have an emergency.
+
+Operator: Got it, B Pen. You think you have an emergency, please hang up and call 911. Or go to the nearest emergency room right away. For nonemergency care, I can help schedule an appointment. Can you tell me your date of birth to verify your identity?
+
+Patient: No, no, it's Bipin. Bipin Koirala. And it's not quite 911-worthy, but it's definitely urgent. I need to see someone today if at all possible. My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming. By PIN. Let me check for the soonest available appointment so you can be seen as soon as possible. Got it, Bpin. What type of appointment do you need?
+
+Patient: It's Bipin. B-I-P-I-N. And I'm not sure what type of appointment. It's a... a sudden pain. It's quite severe, but I don't want to go to the ER. I need to get in today. Is there anything at all available? Even if it's just for a quick look?
+
+Operator: Understood. Byton.
+
+Patient: Bipin. It's Bipin. Can you please check for appointments today? I'm in a lot of pain and I really can't wait.
+
+Operator: I understand, iPIN. The soonest available appointment I see is on Friday, February 20 at 10:30AM. With doctor Bricker. There are no openings for today.
+
+Patient: Friday? That's three days away! This is an emergency, or at least it feels like one. I can't wait that long. Are you sure there's absolutely nothing sooner? What about a cancellation? Or can I be put on a waitlist? I'm willing to come in at any time, even if it's just for a few minutes.
+
+Operator: I understand how urgent this feels by PIN. Right now, there are no open appointments today or sooner than Friday. I don't have access to a wait list or cancellation alerts.
+
+Patient: This is unacceptable. I'm in severe pain and your clinic is telling me I have to wait three days? What if something gets worse? Do you have any after-hours care or an emergency line I can call if the pain becomes unbearable before Friday? This is ridiculous.
+
+Operator: I hear your frustration by PIN. I don't have an after hours or emergency line for the clinic.
+
+Operator: If your pain becomes unbearable or gets worse, please go to the nearest emergency room or call 9 1 1. I can also let the clinic know about your urgent situation so they can as soon as possible. Would you like me to do that?
+
+Patient: Yes, please do that. Let them know it's urgent. And just to be clear, if I *did* need to go to the ER, would Pivot Point Orthopedics have any affiliation or specific instructions for patients going to the ER? Or is it just a general recommendation to go to the closest one?
+
+Operator: I've created a case for you and marked it as urgent. The clinic will review your situation and contact you if an earlier slot opens up. If you need to go to the emergency room, just go to the nearest 1. There are no special instructions or affiliations with Pivot Point Orthopedics. Let me know if you have any other questions or need more help.
+
+Patient: Okay, thank you. So, just to confirm, you've marked my case as urgent and I should wait for the clinic to call me if something opens up? And if the pain gets worse, I should just go to the nearest ER? That's it?
+
+Operator: That's correct, Bipin. Your case is marked as urgent. And the clinic will contact you if an earlier appointment becomes available. If your pain gets worse, go to the nearest emergency room. Let me know if you need anything else.
+
+Patient: Alright. Thank you for your help. Goodbye.
+
+Operator: Got it, Epin. Take care, and I hope you feel better soon. Goodbye.
+

@@ -1,0 +1,99 @@
+Scenario: boundary_condition_test
+Run: 3
+System Prompt: You are calling to schedule an appointment. **STRESS TEST TACTICS:** 1) Request appointments at extreme times (6:00 AM, 11:45 PM, midnight). 2) Ask for dates far in the future (2 years from now) or in the past. 3) Request appointment durations that don't make sense (5 minutes, 4 hours). 4) Ask for same-day appointments when calling at 4:55 PM. 5) Request appointments on holidays (Christmas, New Year's Day). 6) Ask for weekend appointments if they're closed weekends. 7) Test invalid date formats (32nd of February, 13th month). Observe how they handle impossible or edge-case requests - do they provide helpful alternatives or give confusing responses?
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are speaking with Bipin.
+
+Operator: Got it. But then Can you please tell me your date of birth to verify your identity?
+
+Patient: My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming your information, B Pen. How can I help you today?
+
+Patient: I'd like to schedule an appointment with Dr. Smith, please.
+
+Operator: We don't have a doctor Smith Pivot Point Orthopaedics. Would you like to schedule with doctor Hauser, doctor Ross, or doctor Bricker? Let me know your preference. Or I can help you choose.
+
+Patient: Oh, I was under the impression there was a Dr. Smith. My mistake. Could you tell me a bit about Dr. Hauser and Dr. Ross? I'm looking for someone who specializes in knee injuries.
+
+Operator: No problem. Here's a quick overview. Doctor Houser focuses on quick orthopedic procedures and first time patient evaluation. He is great for your concerns and straightforward issues. Doctor Ross handles complex or advanced orthopedic procedures. And often treats challenging cases. He's known for his methodical approach and longer appointments.
+
+Patient: Thank you for that information. I think Dr. Hauser sounds like a good fit for me. When would be the earliest I could get an appointment with him? I'm hoping for something very early in the morning, perhaps around 6:00 AM.
+
+Operator: Got it. Let me check the earliest available appointment times with doctor Hauser for a knee injury. Aiming for something around 6AM if possible. 1 moment while I fetch the options.
+
+Patient: Okay, I'll wait.
+
+Operator: The earliest available appointment with doctor Hauser is Thursday, February 19 at 05:15 p
+
+Patient: Is that 5:15 PM or AM? And just to clarify, is that February 19th of this year, or a different year?
+
+Operator: At 05:15PM with doctor Hauser?
+
+Patient: That's a bit later than I was hoping for. Do you have anything earlier in the day, or perhaps on a different day next week? I'm really trying to get in as soon as possible.
+
+Operator: Would Understood. Right now, the earliest available times with doctor Hauser start at 05:15PM. There aren't any early morning slots open. Would you like to book the 05:15PM slot, or should I check for other days or providers?
+
+Patient: I understand. Given that, could you check for availability with Dr. Hauser, but perhaps two years from now? I'm trying to see what the future looks like for scheduling.
+
+Operator: I can check future availability. But appointment schedules usually aren't set that far in advance. Most clinics only release slots a few months ahead. Would you like me to look for the latest available dates with doctor Hauser? Or focus on a specific month within the next year?
+
+Patient: I appreciate you checking. I understand that two years might be too far out. Could you please check for an appointment two months from now, on the 32nd of February?
+
+Operator: February only has 28 or 29 days. So February 30 second isn't a valid date. Would you like me to check for appointments in February or early March instead? Let me know your preference.
+
+Patient: You are absolutely correct. My apologies for the invalid date. Could you please check for an appointment with Dr. Hauser on February 28th of next year?
+
+Operator: No problem. Let me check for available appointments with doctor Hauser. On February 28 of next year. 1 moment while I look that up.
+
+Patient: Thank you. I'll be waiting.
+
+Operator: You like got it. If you'd like to look for other dates or need help with anything else, just let me know.
+
+Patient: I'm sorry, I didn't quite get that. Could you please repeat what you found for February 28th of next year?
+
+Operator: Sure. There are no available appointments with doctor Hauser. On February 20 eighth of next year or during the following week. Would you like me to check a different date or month for you?
+
+Patient: I see. That's unfortunate. Could you check if Dr. Hauser has any openings on Christmas Day next year?
+
+Operator: Let me check if doctor Hauser has any openings on December 25 next year. 1 moment while I look that up.
+
+Patient: Okay, I'm ready when you are.
+
+Operator: Doctor Hauser does not have any openings on December 25 next year. Or the no problem. What would you like to do next? Are you ready to pick a different date, or do you have another question?
+
+Patient: I understand. Since it seems difficult to get an early morning appointment or a specific date, could you tell me what the *longest* possible appointment duration is that Dr. Hauser offers? I'm curious about the maximum time he typically allocates.
+
+Operator: Doctor Houser typically offers appointments up to 45 minutes for new patient consultations, and 30 minutes for procedures. He does not have longer appointment slots available.
+
+Operator: If you need a longer or more complex visit, doctor Ross is the provider who handles extended appointments.
+
+Patient: Thank you for clarifying that. I'm looking for a standard appointment, so 45 minutes is perfectly fine. Given that, could you please check for the *very last* appointment of the day with Dr. Hauser on any weekday next week? I'm not concerned about the exact time as much as getting the latest possible slot.
+
+Operator: Got it. Let me check for the latest available appointment with doctor Hauser. On any weekday next week. 1 moment while I find the latest slot.
+
+Patient: I'll wait.
+
+Operator: The latest available appointment with doctor Hauser next week, is Thursday, February 26, at 5 no problem.
+
+Patient: I'm sorry, I didn't quite catch that last part. Could you repeat the date and time for the latest appointment with Dr. Hauser next week?
+
+Operator: Of course. The latest appointment with doctor Hauser next week is Thursday, February 26 at 05:15PM. Would you like to book this slot?
+
+Patient: Yes, that sounds good. Please book the appointment for Thursday, February 26th at 5:15 PM with Dr. Hauser.
+
+Operator: Appointment is set for Thursday, February 26, at 5 15 PM with doctor Hauser. For a knee injury evaluation. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for this appointment?
+
+Patient: Yes, please send a text reminder. My number is 555-123-4567.
+
+Operator: It looks like the number you gave, (555) 123-4567, isn't valid for texting. Let me confirm. Should I use your number ending in 5604 or would you like to provide a different 1?
+
+Patient: Oh, I apologize. That number was incorrect. Yes, please use the number ending in 5604.
+
+Operator: A text reminder has been sent to your phone ending in 5 6 0 4. If you need anything else or want to change your appointment, just let me know.
+
+Patient: Thank you for your help. Goodbye.
+

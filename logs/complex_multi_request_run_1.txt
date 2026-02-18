@@ -1,0 +1,157 @@
+Scenario: complex_multi_request
+Run: 1
+System Prompt: You are calling with multiple requests at once. **STRESS TEST TACTICS:** 1) Start by asking about office hours, then immediately ask to schedule an appointment, then ask about insurance, then ask about parking - all in rapid succession without waiting. 2) Change topics mid-sentence. 3) Ask about services they may not offer (physical therapy, X-rays, etc.) and see if they hallucinate availability. 4) Request information about a doctor that doesn't exist. 5) Ask for directions, then phone numbers, then email addresses all at once. 6) Provide too much information at once (long backstory about your condition). 7) Test if they can track multiple conversation threads. Observe if they lose track of requests or provide incorrect information.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes.
+
+Operator: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with B Pin?
+
+Patient: Hello. Yes, you are speaking with Bipin Koirala.
+
+Operator: Got it. B Pen. Can you please tell me your date of birth to verify your identity?
+
+Patient: It's September 20, 1999.
+
+Operator: Thanks for confirming your date of birth, b PIN. How can I help you today?
+
+Patient: I have a few things I need to take care of. First, what are your office hours? And I'd also like to schedule an appointment, and can you tell me if you accept Blue Cross Blue Shield insurance? Oh, and also, is there parking available at your clinic?
+
+Operator: Here's what I can help with.
+
+Patient: I'm sorry, I didn't quite catch that. Could you please repeat what you can help with?
+
+Operator: Sure. Our clinic is open Monday through Friday, with different hours each day.
+
+Patient: Okay, and what are those specific hours for each day, Monday through Friday? And can you also address my other questions about scheduling an appointment, my insurance, and parking?
+
+Operator: We accept most insurance plans, including Blue Cross Blue Shield. There is parking available at the clinic. Let me help you schedule your appointment next.
+
+Operator: No problem.
+
+Patient: That's great to hear about the insurance and parking. Regarding the appointment, I need to see Dr. Anya Sharma. Can you tell me what her earliest availability is? Also, I'm experiencing some sharp pain in my left knee after a fall last week, and I'm wondering if you also offer X-ray services at your location, or if I'd need to go elsewhere for that.
+
+Operator: Parking is available at the clinic. You also mentioned wanting to schedule an appointment. What type of appointment would you like to book?
+
+Patient: Yes, I want to schedule an appointment with Dr. Anya Sharma for sharp pain in my left knee. And, as I asked before, do you offer X-ray services at your clinic, or would I need to get that done somewhere else?
+
+Operator: I can help you schedule an appointment.
+
+Patient: I understand you can help me schedule an appointment. But I need to know about the X-ray services first, and I also need to know Dr. Anya Sharma's availability. Can you please provide that information?
+
+Operator: I don't have information about X-ray services at this clinic.
+
+Operator: And doctor Anja Sharma is not a provider here.
+
+Patient: That's very strange. I was under the impression Dr. Anya Sharma was a physician there. Could you confirm who the orthopedic specialists are at your clinic, and if you offer X-ray services on-site?
+
+Operator: The orthopedic specialists at Pivot Point Orthopaedics are Doctor. Duvi Hauser, Doctor. Doug Ross, and Doctor. Adam Bricker.
+
+Patient: Thank you for that information. Could you tell me the availability for Dr. Hauser and Dr. Ross? I'd like to get an appointment for my knee pain. Also, regarding the X-rays, if you don't do them on-site, can you recommend a facility nearby that does?
+
+Operator: Let me check the next available appointments for doctor Judy Hauser. And doctor Doug Ross. For a knee concern.
+
+Patient: I believe you mentioned Dr. Duvi Hauser and Dr. Doug Ross. Could you please check their availability for my knee concern?
+
+Operator: Got it. I'll check the next available appointments for Doobie Hauser and doctor Doug Ross. Your knee pain. 1 moment while I fetch their openings.
+
+Patient: Thank you. And just to confirm, you're checking for Dr. Duvi Hauser, not Doobie Hauser. Also, do you have any information on whether Pivot Point Orthopaedics offers physical therapy services, or if that's something I'd need to seek elsewhere?
+
+Operator: Doctor Dugie Hauser has openings for a new patient consultation about your knee.
+
+Patient: Okay, that sounds promising. What is the soonest opening Dr. Dugie Hauser has for a new patient consultation regarding my knee? And can you also confirm if you offer physical therapy services at the clinic?
+
+Operator: The soonest opening with doctor Judy Hauser for a new patient consultation is Thursday, February nineteenth at 02:15PM.
+
+Operator: Yes. Physical therapy services are available at the clinic.
+
+Operator: Would you like to book the 02:15PM slot with doctor Hauser?
+
+Patient: February 19th is a bit far out. Do you have anything sooner with Dr. Hauser, or perhaps with Dr. Doug Ross? I'm really hoping to get this knee pain addressed as soon as possible. And yes, I would like to book the physical therapy services.
+
+Operator: The earliest opening with doctor Duggehauser is Thursday, February nineteenth at 02:15PM.
+
+Patient: I understand that February 19th is the earliest with Dr. Duggehauser. Could you please check Dr. Doug Ross's availability again? I'm really looking for something sooner if at all possible. Also, can you confirm the exact address of the clinic, and if there's a specific entrance for physical therapy?
+
+Operator: For physical
+
+Patient: Yes, for physical therapy. I'd like to know if it's offered at the clinic and if there's a specific entrance for it. And, again, I'm still hoping to find an earlier appointment for my knee pain with Dr. Doug Ross.
+
+Operator: Physical therapy is offered at the clinic.
+
+Patient: Great, thank you for confirming that. Now, about the appointment for my knee pain, could you please check Dr. Doug Ross's availability one more time? I'm trying to find something sooner than February 19th.
+
+Operator: For your
+
+Patient: Yes, for my knee pain. I'm looking for an appointment with Dr. Doug Ross, and I was hoping for something earlier than February 19th.
+
+Operator: you're welcome.
+
+Operator: Let me check doctor Doug Ross' earliest availability for your knee pain now. 1 moment.
+
+Patient: Thank you. While you're checking, could you also provide the full address of the clinic? I want to make sure I have all the details for when I schedule my appointment.
+
+Operator: I don't have the full address for Pivot Point Orthopedics.
+
+Operator: But I can help with scheduling and answer questions about services.
+
+Patient: That's quite unusual that you don't have the clinic's address. Could you at least tell me what city and state Pivot Point Orthopedics is located in? And regarding Dr. Ross's availability, have you found anything sooner than February 19th for my knee pain?
+
+Operator: Would you like to book the February 19 appointment with doctor Dugi Hauser? Or would you like to hear about physical therapy openings?
+
+Patient: I'd prefer to see Dr. Doug Ross if possible, and I'm still looking for something sooner than February 19th. If that's not available, then I'll consider the February 19th appointment with Dr. Dugi Hauser. But first, can you please check Dr. Ross's availability again? And can you confirm the city and state the clinic is in?
+
+Operator: I checked doctor Doug Ross' schedule, and there are no openings sooner than February 19.
+
+Patient: Okay, thank you for checking. In that case, I will take the February 19th appointment with Dr. Dugi Hauser at 2:15 PM. Can you please confirm that booking for me? And, just to be absolutely clear, is physical therapy available at this clinic?
+
+Operator: Physical therapy is available at this clinic.
+
+Patient: Thank you for confirming. So, to recap, I'm booking an appointment with Dr. Dugi Hauser on Thursday, February 19th at 2:15 PM for my knee pain. And physical therapy is available at the clinic. Is that correct?
+
+Operator: That's correct. You're booking an appointment with doctor Dugi Hauser on Thursday, February nineteenth at 2 15 PM for your knee pain.
+
+Patient: Excellent. Thank you for your help.
+
+Operator: Would you like to receive a text
+
+Patient: Yes, please. A text reminder for the appointment would be great.
+
+Operator: Got it. I'll finish booking your appointment now. 1 moment while I confirm everything for you.
+
+Patient: Thank you. While you're confirming, could you also tell me if there's a specific department or person I should ask for when I arrive for my physical therapy sessions?
+
+Operator: There's no specific department or person you need to ask for when you arrive for physical therapy.
+
+Operator: Just check-in at the main desk, and the staff will guide you.
+
+Patient: Okay, thank you. And one last thing, could you please provide the phone number for Pivot Point Orthopedics? I'd like to have it handy in case I need to call back.
+
+Operator: I have your number as 4 0 4 0 3 4 1 5 6 0 4.
+
+Operator: But I don't have the clinic's direct phone number to share.
+
+Operator: If you need help again, just call the same line.
+
+Patient: That's my personal phone number, not the clinic's. I need the clinic's main phone number. And could you please confirm the city and state the clinic is located in? You mentioned earlier that you didn't have the address, but I assumed you'd at least know the city and state.
+
+Operator: I understand your concern.
+
+Patient: I appreciate that, but I still need the clinic's phone number and its location (city and state). Can you provide that information?
+
+Operator: I'm sorry, but I don't have access to the clinic phone number, city, or state information.
+
+Patient: This is becoming quite difficult. I have an appointment booked, I know physical therapy is available, but I don't know where the clinic is located or how to call it directly. Is there anyone else I can speak to who might have this information? Or perhaps a website where I can find these details?
+
+Operator: If you have any other questions about your appointment or services, I'm here to help.
+
+Patient: I understand you can help with questions about my appointment and services, which I've already asked. However, I still need the clinic's phone number and its location (city and state). Without that, I can't plan my visit. Is there any way you can find this information for me?
+
+Operator: I understand how important this information is.
+
+Patient: Yes, it is very important. Since you cannot provide the clinic's phone number or location, I don't think I can proceed with this call. Thank you for your time. Goodbye.
+
+Operator: Understood. If you need help with your appointment or have more questions in the future, just call this line. Take care.
+
+Patient: Goodbye.
+

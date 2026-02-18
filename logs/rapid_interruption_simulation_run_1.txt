@@ -1,0 +1,75 @@
+Scenario: rapid_interruption_simulation
+Run: 1
+System Prompt: You are calling to schedule an appointment. **STRESS TEST TACTICS:** 1) Interrupt the operator frequently with 'Wait, let me ask something else' or 'Actually, before that...'. 2) Change topics every 2-3 exchanges. 3) Provide information, then immediately correct yourself. 4) Say 'Never mind' to requests, then ask them again. 5) Rapidly switch between scheduling, canceling, and rescheduling. 6) Test if they can handle conversational flow disruptions gracefully. Observe if they get confused, repeat themselves, or lose context.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Port of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are speaking with Bipin.
+
+Operator: That'll be it then. Can you please tell me your date of birth to verify your identity?
+
+Patient: My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming your information, bPen. How can I help you today?
+
+Patient: Actually, it's Bipin. But never mind that. I need to schedule an appointment with Dr. Smith.
+
+Operator: Got it. I'll help you schedule an appointment.
+
+Patient: Wait, before we do that, can you tell me what the latest advancements in knee replacement surgery are? I'm curious.
+
+Operator: We don't have a doctor Smith at Pivot Point Orthopedics, but we do have doctor Hauser, doctor Ross, and doctor Bricker. Let me check if no problem. What would you like to do first?
+
+Patient: Oh, I thought there was a Dr. Smith. My mistake. Okay, well, can you tell me more about Dr. Hauser? What's his specialty?
+
+Operator: Sure. Doctor Dugiehauser focuses on quick orthopedic procedures and first time patient evaluations. He's known for being efficient, reassuring, and clear in his explanations.
+
+Patient: Okay, that sounds good. I'd like to schedule an appointment with Dr. Dugiehauser then. Actually, wait. Before we schedule, can I cancel an appointment I have next Tuesday? I think it was with Dr. Bricker.
+
+Operator: Great. What type of appointment do you need? New patient consultation, follow-up procedure, or physical therapy? You're not sure, just let me know your main concern.
+
+Patient: I need a follow-up. But about that cancellation, can you confirm if I have an appointment next Tuesday with Dr. Bricker? I'm not entirely sure if it's next Tuesday or the Tuesday after.
+
+Operator: Just to clarify, are you looking to book a follow-up appointment with doctor Hauser? Or do you want to cancel an existing appointment? If you wanna confirm or change an upcoming appointment, I can help with that too. Let me know what you'd like to do.
+
+Patient: You know what, never mind about the cancellation. Let's just schedule the follow-up with Dr. Dugiehauser. What dates do you have available?
+
+Operator: Got it. I'll check available follow-up appointments with doctor Hauser. 1 moment while I find the next openings.
+
+Operator: We have several openings for a follow-up with doctor Hauser this week and next week. The next available slot is Wednesday, February 18 at 10AM. Would you like to book that, or do you prefer a different day or time?
+
+Patient: February 18th? That's not right. Today is February 14th. Are you sure you have the right year?
+
+Operator: Today is actually February 17. The next available appointment is Wednesday, February 18 at 10AM. Would you like to book that slot, or do you want to look at other days?
+
+Patient: Wait, hold on. I just checked my calendar, and I actually need to reschedule that follow-up with Dr. Dugiehauser. I can't make February 18th. Can we look at something in March instead? And also, can you tell me if Dr. Ross is accepting new patients?
+
+Operator: Got it. Let me check your upcoming appointments. And find new dates with doctor Hauser in March for your follow-up. 1 moment while I fetch those options.
+
+Operator: We have several openings for a follow-up with doctor Hauser in March. The next available is Monday, March 2. At 10AM. If you prefer, there are also slots later that week. Would you like to book March 2 at 10AM? Or do you want a different day or time?
+
+Patient: Okay, March 2nd at 10 AM sounds fine for the follow-up. Go ahead and book that. But before we finalize, can you tell me if Dr. Ross is accepting new patients? I might want to schedule an initial consultation with him for something else.
+
+Operator: Me check if doctor Ross is accepting new patients and confirm your mark second follow-up with doctor Hauser. 1 moment while I fetch that information.
+
+Patient: Actually, you know what? Forget about Dr. Ross. Just confirm the follow-up with Dr. Dugiehauser for March 2nd. And can you tell me if there's any way to get an earlier appointment? Maybe even this week?
+
+Operator: Understood. I'll confirm your follow-up with doctor Hauser for March 2 at 10AM. There are also openings with doctor Hauser this week. Including February 18 at 10AM, 1PM, and 2PM. Would you like to keep March second or you want to take an earlier slot this week?
+
+Patient: I'll take the February 18th at 1PM slot. Please book that. And can you also tell me if Dr. Bricker has any openings for a new patient consultation next week? I'm just exploring options.
+
+Operator: Got it. I'll book your follow-up with doctor Hauser. For February 18 at 1PM. Let me also check new patient consultation openings with doctor Bricker for next week. 1 moment while I get those details.
+
+Patient: Actually, I've changed my mind again. I think I'll stick with the March 2nd appointment with Dr. Dugiehauser. And please disregard the question about Dr. Bricker. Just confirm the March 2nd appointment.
+
+Operator: No problem. I'll confirm your follow-up with doctor Hauser for March 2 at 10AM. 1 moment while I book that for you.
+
+Patient: Okay, great. Thank you. And just one more thing, can you tell me what the cancellation policy is? I might need to cancel that March 2nd appointment if something comes up.
+
+Operator: I don't have details about the cancellation policy for Pivot Point Orthopaedics. If you need to cancel, just let me know, and I can help with that right away. Would you like me to ask the clinic support team for more information on their cancellation policy?
+
+Patient: No, that's okay. You don't need to ask the clinic support team. I'll figure it out. Thank you for your help today. Goodbye.
+
+Operator: You're all set. Bison. Your appointment is confirmed. Have a great day. Goodbye.
+

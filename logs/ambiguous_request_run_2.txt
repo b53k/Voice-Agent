@@ -1,0 +1,85 @@
+Scenario: ambiguous_request
+Run: 2
+System Prompt: You are calling with vague or ambiguous requests. **STRESS TEST TACTICS:** 1) Say 'I need to come in' without specifying why. 2) Ask 'What can you help me with?' without context. 3) Provide incomplete information (e.g., 'I have an appointment sometime next week'). 4) Use pronouns without clear referents ('Can you change it?' without saying what 'it' is). 5) Ask questions that could have multiple meanings ('Do you take insurance?' - which insurance? what do you mean by 'take'?). 6) Provide contradictory clues about what you need. 7) Be intentionally vague and see if they ask clarifying questions or make assumptions. Test their ability to handle ambiguity without making incorrect assumptions.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Bipin?
+
+Patient: Yes, you are speaking with Bipin.
+
+Operator: Got it. Deep in. Can you please tell me your date of birth to verify your identity?
+
+Patient: It's September 20, 1999.
+
+Operator: Thanks for confirming. How can I help you today?
+
+Patient: I need to come in.
+
+Operator: Got it. What type of appointment would you like to book?
+
+Patient: I'm not sure, I just need to come in. Can you tell me what you can help me with?
+
+Operator: Sure. Here are the types of appointments you can book.
+
+Patient: Okay, I think I have an appointment sometime next week. Can you check that for me?
+
+Operator: Bippin, you have several upcoming appointments next week for a new patient consultation at Pivot Point Orthopaedics.
+
+Patient: Can you change it?
+
+Operator: No problem. What's the reason you need to reschedule your new patient consultation?
+
+Patient: I don't think that's the right appointment. I need to see someone about my knee.
+
+Operator: Got it. Let's make sure we have the correct appointment. Can you tell me what type of appointment you were expecting? Or the provider's name if you remember?
+
+Patient: I don't remember the provider's name. I just know I need to see someone about my knee. Do you take insurance?
+
+Operator: Yes. Pivot Point Orthopedics accepts most insurance plans. If you need to update your insurance information or have questions about coverage, just let me know.
+
+Patient: Okay, so can you check my appointment for next week then?
+
+Operator: You know, the new patient consultation scheduled next week? For example, there's 1 on Monday, February 23 at 10:30AM. Does that sound right? Or do you wanna look at a different type of appointment?
+
+Patient: No, that's not it. I need to see someone for my knee. I don't think it's a new patient consultation.
+
+Operator: Understood. Since you need to see someone for your knee, it could be a follow-up a procedure, or physical therapy. Do you remember if you've been seen here before for your knee? Is this your first visit for this issue?
+
+Patient: I think I was here before, but it was a while ago. Can you check my records?
+
+Operator: I see you had appointment scheduled for today with doctor Judy Hauser, they were canceled. Would you like to book a follow-up visit? A procedure, or physical therapy for your knee instead?
+
+Patient: No, that's not it. I need to see someone about my knee. Can you just tell me what you can help me with?
+
+Operator: I can help with general questions about the clinic, appointments, patient cases, medication refills, and insurance. If you want to see someone, about your knee, I can help you schedule a visit or connect you with our support team. What would you like to do?
+
+Patient: I need to schedule a visit.
+
+Operator: Got it. For your knee concern, would you like a follow-up consultation a procedure appointment, or a physical therapy session? If you're not sure, I can explain each option.
+
+Patient: Just schedule me for whatever you think is best for my knee.
+
+Operator: Since you've been seen before and need help with your knee, a follow-up consultation is usually the best place to start. Let me check available times for a follow-up visit. 1 moment while I find openings.
+
+Patient: Okay.
+
+Operator: We have follow-up consultation openings for your knee as soon as tomorrow, Wednesday, February 18.
+
+Patient: No, that's too soon. I have an appointment sometime next week. Can you check that?
+
+Operator: Understood. Since you want to check your appointment for next week, I'll return to the main menu to review your upcoming appointments. 1 moment while I check.
+
+Patient: Okay.
+
+Operator: You have a new patient consultation scheduled next week, for example, on Monday, February 23 at 10:30AM. If that's not the right type, I can help you book a or another visit for your knee. You like to change your appointment type or keep looking?
+
+Patient: No, that's not the right appointment. I need to see someone for my knee. Can you change it to a follow-up appointment for my knee?
+
+Operator: You have several new patient consultations scheduled next week at Pivot Point Orthopedics. But none are listed as follow-up appointments. Would you like me to change 1 of your new patient consultations to a visit for your knee? If so, which date works best for you? For example, Monday, February 23 at 10:30AM or another day?
+
+Patient: Yes, please change it to a follow-up appointment for my knee. Monday, February 23 at 10:30 AM works.
+
+Operator: There are no follow-up appointments available on Monday, February 23 at 10:30AM or that week. Would you like to try a different date or look at openings in another month?
+
+Patient: This is not working. I think I need to end the call. Thank you.
+

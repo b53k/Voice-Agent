@@ -1,0 +1,69 @@
+Scenario: boundary_condition_test
+Run: 2
+System Prompt: You are calling to schedule an appointment. **STRESS TEST TACTICS:** 1) Request appointments at extreme times (6:00 AM, 11:45 PM, midnight). 2) Ask for dates far in the future (2 years from now) or in the past. 3) Request appointment durations that don't make sense (5 minutes, 4 hours). 4) Ask for same-day appointments when calling at 4:55 PM. 5) Request appointments on holidays (Christmas, New Year's Day). 6) Ask for weekend appointments if they're closed weekends. 7) Test invalid date formats (32nd of February, 13th month). Observe how they handle impossible or edge-case requests - do they provide helpful alternatives or give confusing responses?
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Byton?
+
+Patient: Hello. No, you're speaking with Bipin Koirala. I'd like to schedule an appointment, please.
+
+Operator: Can I get your date of birth to verify your identity before we schedule your appointment?
+
+Patient: Yes, it's September 20, 1999.
+
+Operator: Thanks for confirming. I have you as Bipin Kwirala. Born 09/20/1999. Let me get started on scheduling your appointment. 1 moment. Thanks for confirming. What type of appointment would you like to schedule? For example, a new patient consultation, follow-up procedure, or physical therapy session.
+
+Patient: I need a follow-up appointment with Dr. Anya Sharma.
+
+Operator: I see you'd like a follow-up appointment. But I don't have doctor Anya Sharma listed as a provider at Pivot Point Orthopaedics. Would you like to see doctor Dutti Hauser, doctor Doug Ross, or doctor Adam Bricker for your follow-up?
+
+Patient: That's strange. I was referred to Dr. Anya Sharma by my primary care physician. Can you please double-check your system? Perhaps she's listed under a different name or specialty.
+
+Operator: I understand the confusion.
+
+Operator: Let me double check for any provider similar to doctor Anya Sharma or with a different specialty in the system. 1 moment while I look this up.
+
+Patient: Thank you, I appreciate you checking again.
+
+Operator: I checked our provider list, and we only have doctor Dugi Hauser, doctor Doug Ross, and doctor Adam Bricker as our orthopedic doctors. Would you like to schedule your follow-up with 1 of them?
+
+Patient: I'm quite sure my referring doctor mentioned Dr. Anya Sharma. Is it possible she's a new physician who hasn't been added to the system yet, or perhaps she's with a different practice that sometimes consults with Pivot Point? If not, I guess I'll have to ask my doctor for a different referral. Could you tell me when the soonest available appointment is with Dr. Hauser?
+
+Operator: Got it. Let me check the soonest available appointment with doctor Doody Hauser for you. 1 moment.
+
+Patient: Thank you. And just to clarify, it's Dr. Dugi Hauser, not Doody.
+
+Operator: Yes. It's doctor Doobie Hauser. Would you like to book the 10AM slot on Wednesday, February 18? Or would you prefer a different time?
+
+Patient: It's actually Dr. Dugi Hauser. And no, I can't make February 18th. Do you have anything available at the very beginning of the day, like 6:00 AM, or perhaps something very late, like 11:45 PM?
+
+Operator: Doctor Dindehauser's earliest appointment start at 8AM. And the latest end at 2PM. There aren't any slots as early as 6AM or as late as 11:45PM. Would you like to look at the 8AM slot on Thursday, February 19?
+
+Patient: Okay, so it's Dr. Dugi Hauser. And no, I can't do February 19th either. What about scheduling an appointment two years from now, on September 20, 2026?
+
+Operator: I can only schedule a appointments within the current availability window. Which is up to about a week from now. Would you like to look at openings later this month or early next month instead?
+
+Patient: I understand. What about a very short appointment, say, 5 minutes? Or a very long one, like 4 hours?
+
+Operator: Follow-up appointments with doctor Dugi Hauser are set for 60 minutes. We don't have 5 minute or 4 hour slots available. You like to see available times for a standard follow-up?
+
+Patient: Yes, please. Show me the available times for a standard follow-up with Dr. Dugi Hauser.
+
+Operator: Here are some available times for a standard follow-up with doctor Judy Hauser.
+
+Operator: Wednesday, February 18 at 10AM, 11AM, 1PM, or 2PM, Thursday, February 19.
+
+Patient: It's Dr. Dugi Hauser. And I can't do February 18th or 19th. Do you have anything on Christmas Day, December 25th?
+
+Operator: At 8AM, 9AM, 10AM, 11AM, 1PM, or 2PM. Do any of the understood. It's doctor Judy Hauser. Would you like to pick 1 of those available times?
+
+Patient: It's Dr. Dugi Hauser. And no, I cannot do December 25th. Do you have anything available on New Year's Day, January 1st?
+
+Operator: I don't see the appointments available that far ahead. Right now, I can only offer openings through the February. Would you like to book something in the next week or 2?
+
+Patient: I understand you can only offer appointments up to February. However, I'm trying to schedule for a specific date. Do you have any openings on February 32nd?
+
+Operator: February only has 28 or 29 days. Of February. Isn't a valid date. Would you like to see openings on February 20 eighth or another date in February 5?
+
+Patient: It's Dr. Dugi Hauser. And no, I can't do February 28th or any other date in February. I'll need to speak with my referring doctor to get a new referral. Thank you for your time. Goodbye.
+

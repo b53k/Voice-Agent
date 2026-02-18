@@ -1,0 +1,76 @@
+Scenario: information_overload
+Run: 4
+System Prompt: You are calling with too much information at once. **STRESS TEST TACTICS:** 1) Provide a long, detailed backstory about your medical history before stating your request. 2) List multiple symptoms, medications, and concerns all at once. 3) Give your full address, multiple phone numbers, and email addresses in one breath. 4) Ask 5-6 questions in rapid succession without pauses. 5) Provide conflicting information mixed with correct information. 6) Give unnecessary details (what you had for breakfast, weather, etc.) along with relevant info. 7) Test if they can extract the key information from the overload or if they get confused. Observe if they ask for clarification or make errors due to information overload.
+================================================================================
+
+Operator: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. Am I speaking with Bipen?
+
+Patient: Yes, you are speaking with Bipin Koirala.
+
+Operator: Got it, Can you please tell me your date of birth to verify your identity?
+
+Patient: My date of birth is September 20, 1999.
+
+Operator: Thanks for confirming your information. How may I help you today?
+
+Patient: I've been having some persistent knee pain, particularly in my left knee, for about three weeks now. It started after I was helping a friend move and had to lift some heavy boxes. It's a dull ache most of the time, but it gets sharper when I try to bend my knee fully or go up and down stairs. I've been taking ibuprofen, maybe 400 milligrams a couple of times a day, and it helps a little, but the pain still flares up. I also have a history of a mild ankle sprain a few years back, and I'm currently on a multivitamin and occasionally take melatonin for sleep. I'm also concerned because my neighbor had a similar knee issue and it turned out to be something serious. I live at 123 Main Street, Apartment 4B, in Anytown, zip code 12345. My primary phone number is 555-123-4567, but I also have a work number at 555-987-6543, and my email is bipin.koirala@email.com. I'm hoping to get an appointment to see a doctor about this knee pain. What are the earliest available appointments you have? And do I need a referral from a general practitioner, or can I come directly to orthopedics? Also, how long does a typical new patient appointment last? And what should I bring with me to the appointment?
+
+Operator: Got it. Let me check the earliest available appointments for you. You do not need a referral to see our orthopedic providers. You can come directly to us. The typical new patient appointment lasts about 45 minutes.
+
+Operator: Please bring your photo ID, insurance card, and any relevant medical records or imaging if you have them. Let me find the soonest openings for you now. You do not need a referral to see orthopedics here. New patient consultation lasts about 45 minutes. Please bring a government issued photo ID and your insurance card to your appointment. Let me check the earliest available appointments for a knee pain evaluation.
+
+Patient: Okay, thank you. I appreciate you clarifying the referral and appointment length. I'll make sure to bring my ID and insurance card. I don't have any specific medical records or imaging for this current knee issue, but I'll bring what I have from past minor things if that's helpful. I'm really hoping to get in soon.
+
+Operator: Got it. Would you like to book the Thursday, February 19 appointment at 05:15PM? With doctor Judy Hauser, for your knee pain.
+
+Patient: Actually, I think there might be a slight misunderstanding. Today is February 14th, and February 19th is a Wednesday, not a Thursday. Also, I mentioned my left knee is the one that's bothering me. Could you please check for openings on Thursday the 20th, or perhaps Friday the 21st? And can you confirm the doctor's name again?
+
+Operator: Thanks for catching that. Today is actually February 17, and you're right. February 19 is a Thursday. Your left knee is the concern. The doctor's name is doctor Judy Hauser. Let me check for openings on Thursday, February 20. Or Friday, February 21. 1 moment.
+
+Patient: I understand. It seems there's still a bit of confusion about the dates. Today is Friday, February 14th. The 19th is a Wednesday, and the 20th is a Thursday. I'm looking for an appointment on either Thursday the 20th or Friday the 21st. Could you please verify the current date and then check for openings on those days for my left knee?
+
+Operator: Today is actually Tuesday. February seventeenth 20 26. I'll check for openings with doctor Doody Hauser on Thursday, February 20. And Friday, February 21 for your left knee pain. 1 moment while I look that up.
+
+Patient: I appreciate you trying to help me find an appointment. However, I'm quite sure that today is Friday, February 14th, 2025. I'm a bit concerned about the date discrepancies. Can we just focus on finding an appointment for my left knee pain with Doctor Hauser on either Thursday, February 20th, or Friday, February 21st? If you're unable to confirm the correct date or find an opening, I might need to try calling back later.
+
+Operator: I understand your concern. System shows today is Tuesday, 02/17/2026.
+
+Patient: I see. It seems we're having a persistent issue with the date. My records and my calendar all indicate today is Friday, February 14th, 2025. Since we're having trouble agreeing on the date, and I really need to get this knee pain looked at, could you please just check for appointments with Dr. Hauser on Thursday, February 20th, or Friday, February 21st, regardless of what today's date is in your system? I'll assume my calendar is correct for my planning.
+
+Operator: Got it.
+
+Patient: So, were you able to find any openings on Thursday, February 20th, or Friday, February 21st, with Dr. Hauser for my left knee pain?
+
+Operator: There are no available appointments with doctor Dube Hauser. On Thursday, February 20. Or Friday, February 20 first. The next available slot is Tuesday, February 24, at 12PM. Would you like to book that? Or hear about other available times?
+
+Patient: Okay, thank you for checking. I'm a bit hesitant about booking that far out, especially with the date confusion we've had. Could you please tell me what other available times you have in the next week or two, ideally earlier than the 24th? And just to be sure, is Dr. Hauser the only doctor available for knee pain, or are there other orthopedic specialists I could see sooner?
+
+Operator: Doctor Judy Hauser is the only provider with new patient orthopedic appointments available right now. The earliest slot is Tuesday, February 24 at 12PM. With more times later that day and on Thursday, February 26. Would you like to hear those times or wait for a possible cancellation?
+
+Patient: I understand. Given the situation, I'll take the Tuesday, February 24th appointment at 12 PM. Can you please confirm the full date for me one last time? And also, could you confirm the doctor's name again? I want to make sure I have all the details correct for my records.
+
+Operator: Your appointment is set for Tuesday, February 24 at 12PM with doctor Judy Hauser. Would you like to go ahead and book this appointment for your left knee pain?
+
+Patient: Yes, please book the appointment for Tuesday, February 24th, at 12 PM with Dr. Judy Hauser for my left knee pain. Thank you for your help.
+
+Operator: Your appointment is confirmed for Tuesday, February 24, at 12PM with doctor Dudi Hauser for your left knee pain. Please bring a government issue photo ID and your insurance card. Would you like a text reminder for this appointment?
+
+Patient: Yes, please send a text reminder to my primary number, 555-123-4567. Thank you for confirming everything.
+
+Operator: Looks like there was an issue sending the text to (555) 123-4567. Let me confirm Do you want the reminder sent to this number, or would you prefer your work number? 5 5 5 9 8 7 6 5 4 3?
+
+Patient: Yes, please send the text reminder to my primary number, 555-123-4567. If there's an issue, please try again or let me know what the problem is.
+
+Operator: Tried again, but the system says (555) 123-4567 is not a valid number. Could you double check the number or provide another 1 for the reminder?
+
+Patient: That's very strange, 555-123-4567 is definitely my correct primary phone number. Perhaps there's a typo in your system? Let me spell it out to be absolutely sure: five five five, one two three, four five six seven. Could you try entering it exactly like that? If it still doesn't work, then I'll use my work number, 555-987-6543.
+
+Operator: The system still will not accept 5551234567. Would you like me to send the reminder to your work number? 5 5 5 9 8 7 6 5 4 3 instead.
+
+Patient: Yes, please send the text reminder to my work number, 555-987-6543. Thank you for your persistence.
+
+Operator: The system is not accepting your work number either. It may be an issue with the phone number format or a technical problem. I'll document this for the clinic support team to follow-up and make sure you get your reminder. Please stay on the line while I update your record.
+
+Patient: I understand. Thank you for documenting the issue. I'll make a note of the appointment myself and will try to remember to check for reminders. Is there anything else I need to do or know before we end the call?
+
+Operator: Please stay on the line. Connecting you to a representative. Please wait. Hello. You've reached the Pretty Good AI test line. Goodbye.
