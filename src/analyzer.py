@@ -132,6 +132,7 @@ class AnalyzeLogs:
         - Be thorough but concise
         - Use clear, professional language
         - Highlight the most critical issues first
+        - Ignore name pronunciation issues and focus on the actual conversation
 
         Generate the summary now:"""
 
