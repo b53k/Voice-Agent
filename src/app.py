@@ -4,6 +4,7 @@ Handles incoming webhook callbacks from Twilio for call status updates.
 Initiates Media Streams connection for full-duplex communication.
 '''
 import os
+import re
 import json
 import asyncio
 from dotenv import load_dotenv
@@ -39,7 +40,7 @@ scenarios = [
     'information_overload'
 ]
 
-scenario = scenarios[0]
+scenario = scenarios[8]
 
 if scenario == 'cancel':
     language = "hi-IN"
@@ -102,16 +103,18 @@ async def websocket_endpoint(websocket: WebSocket):
     # Message buffering to wait for complete operator messages.
     operator_message_buffer = []
     buffer_timeout_task = None
-    SILENCE_TIMEOUT = 3.0  # seconds to wait for silence before flushing buffer.
-
+    SILENCE_TIMEOUT = 6.0  # seconds to wait for silence before flushing buffer.
+    websocket_connected = True
+    MAX_CHUNK_SIZE = 200 # Characters per chunk.
+    
     async def process_buffered_messages():
         """
             Process buffered messages when we have a complete operator message.
         """
-        nonlocal operator_message_buffer, buffer_timeout_task
+        nonlocal operator_message_buffer, buffer_timeout_task, websocket_connected
 
-        if not operator_message_buffer:
-            return # No messages to process.
+        if not operator_message_buffer or not websocket_connected:
+            return # No messages to process or connection is closed.
 
         # Combine all buffered messages into one.
         full_operator_message = " ".join(operator_message_buffer)
@@ -124,19 +127,68 @@ async def websocket_endpoint(websocket: WebSocket):
         ai_reply = await conversation_handler.process_transcript(full_operator_message, stream = False)
         logger.info(f" >>> AI replied: {ai_reply}")
 
-        if ai_reply:
+        if ai_reply and websocket_connected:
             # log patient message
             conversation_logger.log_patient(ai_reply)
 
-            # Send AI reply back to be spoken
-            reply = {
-                "type": "text",
-                "token": ai_reply,
-                "last": True,   # Indicates the last token in the sequence.
-                "interruptible": True, # Indicates if the reply can be interrupted by user input.
-            }
-        
-            await websocket.send_text(json.dumps(reply))
+            # Split long messages into smaller chunks to prevent TTS timeout.
+            # Twilio Conversation Relay may work better with smaller chunks...idk!!!!
+
+            if len(ai_reply) > MAX_CHUNK_SIZE:
+                sentences = re.split(r'([.!?]+(?:\s+|$))', ai_reply)
+
+                # Recombine sentences with punctuation.
+                sentence_list = []
+                for i in range(0, len(sentences), 2):
+                    if i+1 < len(sentences):
+                        sentence_list.append(sentences[i] + sentences[i+1])
+                    elif sentences[i].strip():
+                        sentence_list.append(sentences[i])
+                
+                # Group sentences into chunks
+                chunks = []
+                current_chunk = ""
+
+                for sentence in sentence_list:
+                    # If adding this sentence would exceed the chunk size, start new chunk.
+                    if current_chunk and len(current_chunk) + len(sentence) > MAX_CHUNK_SIZE:
+                        chunks.append(current_chunk.strip())
+                        current_chunk = sentence
+                    else:
+                        current_chunk += sentence
+                
+                # Add remaining chunk
+                if current_chunk.strip():
+                    chunks.append(current_chunk.strip())
+            
+            else:
+                chunks = [ai_reply]
+
+            # Send chunks incrementally to prevent TTS timeout.
+            for i, chunk in enumerate(chunks):
+                if not websocket_connected:
+                    break
+
+                is_last = (i == len(chunks) - 1)
+
+                # Send AI reply back to be spoken
+                reply = {
+                    "type": "text",
+                    "token": chunk,
+                    "last": is_last,   # Indicates the last token in the sequence.
+                    "interruptible": True, # Indicates if the reply can be interrupted by user input.
+                }
+
+                try:
+                    await websocket.send_text(json.dumps(reply))
+
+                    if not is_last:
+                        await asyncio.sleep(0.5) # 500 ms delay between chunks.
+
+                except WebSocketDisconnect:
+                    websocket_connected = False
+                    break
+
 
     try:
         while True:
@@ -195,6 +247,22 @@ async def websocket_endpoint(websocket: WebSocket):
 
     except WebSocketDisconnect:
         logger.info(f"WebSocket Disconnected")
+        websocket_connected = False
+
+        if buffer_timeout_task and not buffer_timeout_task.done():
+            buffer_timeout_task.cancel()
+            try:
+                await buffer_timeout_task
+            except asyncio.CancelledError:
+                pass
+
+        # Process any remaining buffered messages but don't try to send responses.
+        if operator_message_buffer:
+            full_operator_message = " ".join(operator_message_buffer)
+            logger.info(f" >>> Operator Said: {full_operator_message}")
+            conversation_logger.log_operator(full_operator_message)
+
+        # Save the conversation log.
         conversation_logger.save()
 
     except Exception as e:
