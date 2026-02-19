@@ -44,7 +44,6 @@ cd "$SCRIPT_DIR/src" && uvicorn app:app --host 0.0.0.0 --port 8080 --reload &
 SERVER_PID=$!
 
 
-
 sleep 3
 echo ""
 echo "Service started:"
@@ -52,7 +51,6 @@ echo "FastAPI server: http://localhost:8080"
 echo ""
 echo "Press Ctrl+C to exit."
 echo ""
-
 
 # === Run bot in background so script can continue ===
 cd "$SCRIPT_DIR/src" && python3 bot.py &
