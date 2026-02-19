@@ -11,3 +11,6 @@ services:
     volumes:
       - ./logs:/app/logs
       - ./analysis:/app/analysis
+    stdin_open: true
+    tty: true
+    command: bash
