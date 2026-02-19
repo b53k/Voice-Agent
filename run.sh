@@ -33,12 +33,14 @@ if [ ! -f "/.dockerenv" ]; then
     fi
 fi
 
-# Check for .env file
-if [ ! -f "$SCRIPT_DIR/src/.env" ] && [ ! -f "$SCRIPT_DIR/.env" ]; then
-    echo "ERROR: No .env file found!"
-    echo "Copy .env.example to .env and fill in your credentials:"
-    echo "  cp .env.example .env"
-    exit 1
+# Skip .env file check inside Docker (env vars are injected by docker-compose)
+if [ ! -f "/.dockerenv" ]; then
+    if [ ! -f "$SCRIPT_DIR/src/.env" ] && [ ! -f "$SCRIPT_DIR/.env" ]; then
+        echo "ERROR: No .env file found!"
+        echo "Copy .env.example to .env and fill in your credentials:"
+        echo "  cp .env.example .env"
+        exit 1
+    fi
 fi
 
 # === Start FastAPI server ===
