@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-SCRIPT_DIR="$(pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cleanup() {
     echo ""
@@ -20,7 +20,23 @@ cleanup() {
 
 trap cleanup INT TERM
 
-source "$SCRIPT_DIR/voice_bot/bin/activate"
+# Create virtual environment if it doesn't exist
+if [ ! -d "$SCRIPT_DIR/voice_bot" ]; then
+    echo "Creating virtual environment..."
+    python3 -m venv "$SCRIPT_DIR/voice_bot"
+    source "$SCRIPT_DIR/voice_bot/bin/activate"
+    pip install -r "$SCRIPT_DIR/requirements.txt"
+else
+    source "$SCRIPT_DIR/voice_bot/bin/activate"
+fi
+
+# Check for .env file
+if [ ! -f "$SCRIPT_DIR/src/.env" ] && [ ! -f "$SCRIPT_DIR/.env" ]; then
+    echo "ERROR: No .env file found!"
+    echo "Copy .env.example to .env and fill in your credentials:"
+    echo "  cp .env.example .env"
+    exit 1
+fi
 
 # === Start FastAPI server ===
 echo "Starting FastAPI server..."
@@ -32,9 +48,9 @@ SERVER_PID=$!
 sleep 3
 echo ""
 echo "Service started:"
-echo "FastAPI server: http://localhost:8080" | lolcat
+echo "FastAPI server: http://localhost:8080"
 echo ""
-echo "Press Ctrl+C to exit." | lolcat
+echo "Press Ctrl+C to exit."
 echo ""
 
 
