@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  voice-bot:
+    build: .
+    container_name: voice-bot
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./analysis:/app/analysis
