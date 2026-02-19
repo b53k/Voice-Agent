@@ -4,11 +4,10 @@ A voice bot that calls an AI phone operator and stress-tests it with various sce
 
 ## Prerequisites
 
-- [Docker] (https://docs.docker.com/get-started/get-docker/) (recommended)
-- OR Python 3.12+
-- [Twilio account] (https://console.twilio.com) with a phone number
-- [Google AI Studio API Key] (https://ai.google.dev/gemini-api/docs/api-key) (for Gemini)
-- A public URL for webhooks (e.g., [ngrok] (https://ngrok.com/))
+- [Docker](https://docs.docker.com/engine/install/ubuntu/)
+- [Twilio account](https://console.twilio.com) with a phone number
+- [Google AI Studio API Key](https://ai.google.dev/gemini-api/docs/api-key) (for Gemini)
+- A public URL for webhooks (e.g., [ngrok](https://ngrok.com/))
 
 ## Quick Start (Docker - recommended)
 
@@ -25,29 +24,14 @@ A voice bot that calls an AI phone operator and stress-tests it with various sce
 
 3. **Copy the ngrok public URL** into your `.env` file as `WEBHOOK_URL`.
 
-4. **Run the bot:**
-    ```Dockerfile
-    docker compose up --build
-    # The bot will start the server and place the test call.
+
+4. **Build Docker Image & Run:**
+    ```bash
+    sudo docker compose up --build -d
     ```
 
-## Quick Start (Without Docker)
-
-1. **Clone the repo and set up environment variables:**
     ```bash
-    cp .env.example .env
-    # Edit .env with your actual credentials
-    ```
-
-2. **Start ngrok** (in a separate terminal):
-    ```bash
-    ngrok http 8080
-    ```
-
-3. **Run:**
-    ```bash
-    chmod +x run.sh
-    ./run.sh
+    sudo docker compose exec voice-bot bash -c "./run.sh"
     ```
 
 ## Environment Variables
@@ -64,12 +48,7 @@ A voice bot that calls an AI phone operator and stress-tests it with various sce
 ## Analyzing Logs
 After test calls complete, conversation logs are saved in `logs/`. To generate summaries:
 ```bash
-# With Docker:
-docker compose run voice-bot python3 src/analyzer.py
-
-# Without Docker:
-source voice_bot/bin/activate
-python3 src/analyzer.py
+sudo docker compose run voice-bot python3 src/analyzer.py
 ```
 
 Analysis summaries are saved in `analysis/`.
