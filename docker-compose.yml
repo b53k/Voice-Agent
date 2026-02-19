@@ -9,6 +9,7 @@ services:
     volumes:
       - ./logs:/app/logs
       - ./analysis:/app/analysis
+      - ./src:/app/src
     stdin_open: true
     tty: true
     command: bash
