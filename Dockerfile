@@ -1,5 +1,4 @@
 # Dockerfile for the voice bot
-
 FROM python:3.12-slim
 WORKDIR /app
 
