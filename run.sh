@@ -20,14 +20,17 @@ cleanup() {
 
 trap cleanup INT TERM
 
-# Create virtual environment if it doesn't exist
-if [ ! -d "$SCRIPT_DIR/voice_bot" ]; then
-    echo "Creating virtual environment..."
-    python3 -m venv "$SCRIPT_DIR/voice_bot"
-    source "$SCRIPT_DIR/voice_bot/bin/activate"
-    pip install -r "$SCRIPT_DIR/requirements.txt"
-else
-    source "$SCRIPT_DIR/voice_bot/bin/activate"
+# Skip venv setup if running inside Docker
+if [ ! -f "/.dockerenv" ]; then
+    # Create virtual environment if it doesn't exist
+    if [ ! -d "$SCRIPT_DIR/voice_bot" ]; then
+        echo "Creating virtual environment..."
+        python3 -m venv "$SCRIPT_DIR/voice_bot"
+        source "$SCRIPT_DIR/voice_bot/bin/activate"
+        pip install -r "$SCRIPT_DIR/requirements.txt"
+    else
+        source "$SCRIPT_DIR/voice_bot/bin/activate"
+    fi
 fi
 
 # Check for .env file
