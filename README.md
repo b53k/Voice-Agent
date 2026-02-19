@@ -91,9 +91,12 @@ Available scenarios (by index):
 │       └── prompt.json        # Scenario prompts
 ├── logs/                      # Conversation logs (auto-generated)
 ├── analysis/                  # Analysis summaries (auto-generated)
+├── ARCHITECTURE.md            # Arch doc
+├── CONSOLICATED_BUG_REPORT.md # Bug report
 ├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── run.sh                     # Non-Docker run script
+├── docker-compose.yml          
+├── requirements.txt           
+├── README.md                  # Readme
+├── run.sh                     # main shell script
 └── .env.example               # Template for environment variables
 ```
