@@ -1,0 +1,5 @@
+fastapi==0.129.0
+langchain_core==1.2.13
+langchain_google_genai==4.2.0
+python-dotenv==1.2.1
+twilio==9.10.1
